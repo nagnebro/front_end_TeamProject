@@ -1,0 +1,146 @@
+
+
+body,html {
+
+    width: 100%;
+    height: 100%;
+}
+header{
+    display : flex;
+    width: 100%;
+    justify-content : space-between;
+    align-items : center;
+    height: 120px;
+    font-size : 14px;
+    padding-right : 20px;
+    text-align: center;
+    background-color : white;
+    border : 1px solid black;
+    margin-left: -9px;
+    margin-top: -10px;
+    position : fixed;
+
+
+}
+
+a{
+    width: 70px;
+    height: 100%;
+    text-decoration: 0;
+    color : black;
+    font-size : 15px;
+}
+a:hover{
+    cursor : pointer;
+}
+h2{
+    margin : auto;
+    font-size : 30px;
+}
+
+.leftbox, .rightbox{
+
+    display : flex;
+    width: 33%;
+}
+
+.rightbox{
+    justify-content: right;
+}
+.best{
+    height: 1000px;
+}
+
+.background{
+    background-image : url("images/home.jpg");
+    width: 100%;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size : cover;
+}
+
+.best{
+    disy : flex;
+    height: 400px;
+    width: 900px;
+    margin : auto;
+    margin-top: 40px;
+    border : 1px solid black;
+}
+
+.best div{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.best img{
+    width: 200px;
+    margin-left: 10px;
+}
+
+.bestcenter span{
+    font-size : 13px;
+}
+.bestleft{
+    display : flex;
+    width: 100%;
+    height: 88%;
+
+}
+
+.bestcenter{
+    width: 60%;
+    height: 100%;
+    position :relative;
+
+}
+
+.booklist img{
+    width: 50px;
+    height: 70px;
+    margin-top: 20px;
+}
+
+
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    font-size : 13px;
+    display : flex;
+    color : white;
+
+}
+
+.footer div{
+    text-align: center;
+    align-items: center;
+}
+
+#left, #center,#right{
+    padding-left : 30px;
+    padding-top : 30px;
+    width: 33%;
+}
+
+
+footer span{
+    display : inline-block;
+    width: 200px;
+    color : darkgray;
+}
+.lspan{
+    width: 90px;
+    color: white;
+}
+
+.txts{
+    margin-bottom: 10px;
+}
+
+.txts span:nth-child(2){
+    color:darkgrey;
+}
+
+#center .txts span{
+
+}
