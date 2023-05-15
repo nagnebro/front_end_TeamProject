@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Google</title>
+
+
+
+    <style>
+
+        html, body{
+            margin: 0;
+            height: 100%;
+        }
+
+        header{
+            display : flex;
+            justify-content: space-between;
+            height: 20%;
+            padding-left : 20px;
+            padding-right : 20px
+
+        }
+        #headerleft, #headerright{
+            display : flex;
+            height: 50px;
+            align-items: center;
+        }
+        #headerright{
+            width: 150px;
+        }
+
+        #headerright a:nth-child(3){
+
+            background-image : url("돋보기.png");
+            background-size: cover ;
+            width: 20px;
+            height: 20px;
+            margin: 10px;
+        }
+        #headerright a:nth-child(4){
+            background-image : url("돋보기.png");
+            background-size: cover ;
+            width: 20px;
+            height: 20px;
+            margin: 10px;
+        }
+
+
+        .background{
+            background-image : url("google.png");
+            width: 500px;
+            height: 100px;
+            background-size : cover;
+            background-repeat: no-repeat;
+            margin : auto;
+            position : relative;
+            bottom: 50px;
+
+        }
+        .container{
+            position : relative;
+            top: 70px;
+            width: 1000px;
+            height: 70%;
+            margin : auto;
+
+            text-align: center;
+        }
+
+        .container .textbox{
+            display : flex;
+            align-items : center;
+            width: 400px;
+            height: 40px;
+            border : 1px solid darkgrey;
+            border-radius : 20px;
+            margin : auto;
+            margin-bottom: 20px;
+
+        }
+
+        .container input[type=text]{
+            outline: 0;
+            border : 0;
+            width: 300px;
+            height: 35px;
+            font-size :15px;
+            margin-left: 10px;
+        }
+        .container input[type=button]{
+
+            margin: 10px;
+            width: 130px;
+            height: 30px;
+            font-size : 15px;
+            border : 0px;
+            border-radius : 10px;
+            /*background-color : whit*/
+
+        }
+        .container input[type=button]:hover{
+            background-color: darkgrey;
+            cursor: pointer;
+        }
+
+        .container img:nth-child(1){
+            width: 20px;
+            height: 20px;
+            margin-left: 10px;
+        }
+
+
+
+        footer{
+            height: 10%;
+        }
+
+        .footer1{
+            height: 50%;
+            background-color: lightgrey;
+            display : flex;
+            align-items: center;
+            padding-left: 15px;
+            padding-right : 15px;
+
+        }
+        .footer1:nth-child(1){
+            border-bottom : 1px solid black;
+        }
+
+        .footer1:nth-child(2){
+            display : flex;
+            justify-content: space-between;
+        }
+        .bi{
+            width: 20px;
+            height: 20px;
+            position: relative;
+            left: 20px;
+        }
+
+
+
+        .leftbox,.rightbox{
+            display : flex;
+        }
+
+
+        .footer1 a{
+            font-size : 14px;
+            margin-left: 10px;
+            width: 70px;
+        }
+
+        .leftbox a:nth-child(1){
+            width: 30px;
+        }
+        .leftbox a:nth-child(2){
+            width: 50px;
+        }
+
+        .rightbox a:nth-child(1){
+            width: 100px;
+        }
+
+        .rightbox a:nth-child(2){
+            width: 30px;
+        }
+        .rightbox a:nth-child(3){
+            width: 30px;
+        }
+
+        a{
+            text-decoration : none;
+            font-size : 14px;
+            color : black;
+            width: 100px;
+            margin: 0px;
+
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<!--
+
+<i class="bi bi-mic"></i> -> mic icon 소스
+
+-->
+
+<header>
+    <div id="headerleft">
+<a href = "">Google 정보</a>
+<a href = "">스토어</a>
+    </div>
+    <div id="headerright">
+    <a href="">Gmail</a><a href="">이미지</a><a href=""></a><a href=""></a>
+
+    </div>
+</header>
+
+
+<div class = container>
+    <div class="background"></div>
+    <div class="textbox">
+        <img src="돋보기.png" alt="">
+        <input type="text" placeholder = "Google 검색 또는 URL 입력">
+        <img src="" alt="">
+        <img src="" alt="">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mic" viewBox="0 0 16 16">
+            <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"/>
+            <path d="M10 8a2 2 0 1 1-4 0V3a2 2 0 1 1 4 0v5zM8 0a3 3 0 0 0-3 3v5a3 3 0 0 0 6 0V3a3 3 0 0 0-3-3z"/></svg>
+    </div>
+
+    <input type="button" value ="Google 검색"><input type="button" value = "I'm Felling Lucky">
+</div>
+
+<footer>
+    <div class="footer1">
+        <a href="">대한민국</a>
+
+    </div>
+    <div class="footer1">
+
+        <div class="leftbox">
+            <a href="">광고</a>
+            <a href="">비즈니스</a>
+            <a href="">검색의 원리</a>
+        </div>
+
+        <div class="rightbox">
+        <a href="">개인정보처리방침</a>
+            <a href="">약관</a>
+            <a href="">설정</a>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>
