@@ -13,13 +13,12 @@
         <a href="">추천도서</a><a href="">공지사항</a>
     </div>
     <h2>
-        Flato
+        <a href="home.html"><span id="home">Flato</span></a>
     </h2>
     <div class="rightbox">
         <a href="">로그인</a><a href="">회원가입</a><a href="">마이페이지</a><a href="">장바구니</a>
     </div>
 </header>
-
 <div class="background">
 </div>
 
@@ -30,13 +29,14 @@
     <hr>
     <div class="bestleft">
         <div>
-            <img src="images/book.png" alt="">
+            <img src="images/book.png"  class="bigimg" onclick = "bestSeller()">
         </div>
         <div class="bestcenter">
-            <h3>오늘의 베스트셀러 : 소크라테스의 변명</h3>
+            <h3><span id="besttitle">오늘의 베스트셀러 :</span> <span id="booktitle">소크라테스의 변명</span></h3>
 
-            <span>
-                책소개 서양 철학의 근간이 된 소크라테스 사상의 정수를 한 권으로 만나다
+            <div id="contentbox">
+            <span id="content">
+                서양 철학의 근간이 된 소크라테스 사상의 정수를 한 권으로 만나다.
             그리스어 원전 완역본으로 읽는 인류 최고 지성인의 영원한 유산
             참된 진리 앞에서 죽음도 기쁘게 받아들인 탁월한 지성인이자 정의의 철학자,
             소크라테스의 사상을 한 권에 담았다. 소크라테스는 기원전 5세기경 상대주의적이고 실용적인
@@ -46,17 +46,16 @@
             않았지만 그의ß 사상은 모두 수제자인 플라톤에 의해 보존되어 전해졌다.
 
             </span>
+            </div>
             <div class="booklist">
                 <img src="images/book.png" alt="">
-                <img src="images/book.png" alt="">
-                <img src="images/book.png" alt="">
-                <img src="images/book.png" alt="">
+                <img src="images/book2.jpg" alt="" >
+                <img src="images/book3.jpeg" alt="">
+                <img src="images/book4.jpg" alt="">
+                <img src="images/book5.jpeg" alt="">
             </div>
         </div>
 
-        <div class="list">
-            책 책 책
-        </div>
     </div>
 
 
@@ -129,6 +128,8 @@
 
     </div>
 
+
 </footer>
 </body>
+<script src="home.js"></script>
 </html>

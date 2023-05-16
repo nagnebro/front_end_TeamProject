@@ -4,55 +4,65 @@ body,html {
 
     width: 100%;
     height: 100%;
+    margin  : 0;
 }
 header{
+
+
+
     display : flex;
-    width: 100%;
+    width: 101%;
     justify-content : space-between;
     align-items : center;
     height: 120px;
     font-size : 14px;
-    padding-right : 20px;
+
     text-align: center;
-    background-color : white;
-    border : 1px solid black;
+    background-color :  rgb(107,93,80);
+    color : white;
+
     margin-left: -9px;
     margin-top: -10px;
     position : fixed;
 
-
 }
 
+
+#home{
+    font-size : 35px;
+}
 a{
+
     width: 70px;
     height: 100%;
     text-decoration: 0;
-    color : black;
+    color : white;
     font-size : 15px;
 }
 a:hover{
     cursor : pointer;
 }
-h2{
+#besttitle{
     margin : auto;
-    font-size : 30px;
+    font-size : 25px;
 }
-
 .leftbox, .rightbox{
 
     display : flex;
     width: 33%;
+    margin-left: 30px;
 }
 
 .rightbox{
     justify-content: right;
+    margin-right: 30px;
 }
 .best{
     height: 1000px;
 }
 
 .background{
-    background-image : url("images/home.jpg");
+    background-image : url("images/home1.jpg");
     width: 100%;
     height: 600px;
     background-repeat: no-repeat;
@@ -65,7 +75,6 @@ h2{
     width: 900px;
     margin : auto;
     margin-top: 40px;
-    border : 1px solid black;
 }
 
 .best div{
@@ -73,10 +82,16 @@ h2{
     margin-right: 10px;
 }
 .best img{
+    position : relative;
     width: 200px;
     margin-left: 10px;
+    filter: drop-shadow(10px 6px 6px #c3c3c3);
+    transition : 1s;
 }
 
+.bestleft img:hover{
+    cursor : pointer;
+}
 .bestcenter span{
     font-size : 13px;
 }
@@ -87,18 +102,41 @@ h2{
 
 }
 
+#booktitle{
+    font-size : 18px;
+    color : burlywood;
+    font-weight : bold;
+}
+
+hr{
+    border : 0.7px solid burlywood;
+
+}
+
+
 .bestcenter{
     width: 60%;
     height: 100%;
     position :relative;
+    left: 30px;
 
 }
 
 .booklist img{
     width: 50px;
     height: 70px;
-    margin-top: 20px;
+
 }
+
+.booklist{
+    /*background-color: red;*/
+
+    height: 80px;
+    display : flex;
+
+
+}
+
 
 
 footer{
@@ -108,6 +146,7 @@ footer{
     font-size : 13px;
     display : flex;
     color : white;
+    margin-top: 20px;
 
 }
 
@@ -141,6 +180,55 @@ footer span{
     color:darkgrey;
 }
 
-#center .txts span{
+.booklist img:nth-child(1):hover{
 
+    width: 60px;
+    height: 80px;
+    transition : 0.5s;
+}
+
+.booklist img:nth-child(2):hover{
+
+    width: 60px;
+    height: 80px;
+    transition : 0.5s;
+}
+
+.booklist img:nth-child(3):hover{
+
+    width: 60px;
+    height: 80px;
+    transition : 0.5s;
+}
+
+.booklist img:nth-child(4):hover{
+
+    width: 60px;
+    height: 80px;
+    transition : 0.5s;
+}
+
+.booklist img:nth-child(5):hover{
+
+    width: 60px;
+    height: 80px;
+    transition : 0.5s;
+}
+
+
+#contentbox{
+
+    width: 500px;
+    height: 160px;
+    line-height : 22px;
+    margin-bottom: 20px;
+
+}
+
+
+.hid_content{
+    display : none;
+}
+.hid_title{
+    display : none;
 }
