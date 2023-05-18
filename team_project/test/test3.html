@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+  <style>
+
+      html,body{
+          height: 2000px;
+      }
+
+      .background{
+
+          width: 100%;
+          height: 500px;
+          background: url("../mine/images/home1.jpg") no-repeat;
+
+      }
+
+
+      .box1{
+          width: 100%;
+          height: 300px;
+          /*background-color: blue;*/
+          /*position : fixed;*/
+          backdrop-filter: blur(20px);
+          z-index : 1;
+          /*position: fixed;*/
+          /*-webkit-backdrop-filter: brightness(1.1) blur(20px);*/
+      }
+
+
+  </style>
+</head>
+<body>
+
+
+
+<div class="box1">
+    asdsa
+
+
+</div>
+<div>
+
+    <div class="background">
+
+    </div>
+</div>
+
+<!--<button onclick="window.scroll(0, 100);">click to scroll to the 100th pixel</button>-->
+</body>
+
+<script>
+
+
+    // opacity 와 scroll을 이용해 백그라운드 이미지 없애기. 혹은 display : none 이었던 블럭이나 텍스트를 띄우기 혹은 slideup, slidedown 이용
+    //(옆에서 들어오는 슬라이딩도 있을 것이다 분명)
+
+
+    const img = document.querySelector(".background");
+    const box = document.querySelector(".box1")
+    window.addEventListener("scroll",function(){
+
+        console.log(window.scrollY);
+        let y = window.scrollY;
+        let opacity = 1;
+        opacity-= (y/200); // 스크롤 했을 때 현재 y좌표에서 600을 나눈 후(600은 그냥 창의 사이즈를 고려한 적절한 수치) 투명도에서 빼준다.
+
+        img.style = `opacity:${opacity}`;
+        box.style = "color:red";
+
+
+
+
+    })
+
+
+    // window.scroll({
+    //     top: 0,
+    //     left: 0,
+    //     behavior : "smooth"
+    // });
+</script>
+</html>

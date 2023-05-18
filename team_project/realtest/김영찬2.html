@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+
+
+    .container{
+    margin: auto;
+      width: 700px;
+      height: 700px;
+      background-color: cornflowerblue;
+      border : 1px solid dodgerblue;
+      display : flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .loginbox{
+      width: 500px;
+      height: 500px;
+      background-color: darkgrey;
+      display : flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+    .txts{
+      display : flex;
+      justify-content: space-between;
+      text-align : left;
+      width: 400px;
+    }
+    input[type=text], input[type=password]{
+      width: 250px;
+
+      border: 0;
+      border-bottom : 1px dashed black;
+      margin-bottom: 20px;
+      background-color: darkgrey;
+      outline : 0;
+      padding-left: 10px;
+      font-size : 15px;
+      padding-bottom: 7px;
+    }
+
+    button{
+      width: 400px;
+      height: 40px;
+      background-color: darkseagreen;
+      border : 0;
+      border-radius: 5px;
+      margin-top: 30px;
+      font-size : 18px;
+      font-weight : bold
+    }
+    button:hover{
+      cursor: pointer;
+      background-color: forestgreen;
+    }
+
+    #pw_notice{
+      margin-bottom: 10px;
+      font-size : 12px;
+
+      right: 50px;
+      color : whitesmoke;
+      opacity: 0;
+    }
+
+    #pw_notice span{
+
+      padding-left: 140px;
+    }
+    .must{
+
+      font-size : 13px;
+      color : red;
+      display :none;
+      padding-left: 140px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="loginbox">
+
+
+    <form action="">
+
+
+      <div class="txts"><span>아이디</span><input id="id" type="text" ></div>
+      <div class="txts"><span class="must">필수입력 요소입니다.</span></div>
+
+
+      <div class="txts"><span>패스워드</span><input id="pw" type="password"  ></div>
+      <div class="txts"><span class="must">필수입력 요소입니다.</span></div>
+
+      <div class="txts" id="pw_notice"><span>영문자 대/소문자 특수문자, 숫자 포함 8~32자</span></div>
+      <div class="txts"><span>패스워드 확인</span><input id="pw_check"type="password"></div>
+      <div class="txts"><span class="must">필수입력 요소입니다.</span></div>
+
+      <div class="txts"><span>이메일</span><input id="email" type="text"></div>
+      <div class="txts"><span>주소</span><input id="address" type="text"></div>
+      <button>가&nbsp입</button>
+
+    </form>
+
+  </div>
+</div>
+
+</body>
+
+<script>
+
+
+  const id = document.querySelector("#id");
+  const pw = document.querySelector("#pw")
+  const pw_check = document.querySelector("#pw_check")
+  const pw_notice = document.querySelector("#pw_notice");
+  const btn = document.querySelector("button");
+  const email = document.querySelector("#email")
+  const address = document.querySelector("#address")
+  const must_list = document.querySelectorAll(".must");
+  const list = [id,pw,pw_check];
+
+
+  pw.addEventListener('click',function(){
+
+    pw_notice.style = "opacity:1"
+  })
+
+  btn.addEventListener("click",function(){
+
+      alert("가입완료")
+  })
+
+  email.addEventListener("input",function(){
+
+    for(let i = 0 ; i<list.length;i++){
+
+      if(list[i].value==""){
+
+        must_list[i].style = "display:inline";
+      }
+    }
+
+  })
+
+  address.addEventListener("input",function(){
+
+    for(let i = 0 ; i<list.length;i++){
+
+      if(list[i].value==""){
+
+        must_list[i].style = "display:inline";
+      }
+    }
+
+
+  })
+
+
+
+</script>
+</html>

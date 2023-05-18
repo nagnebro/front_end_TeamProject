@@ -1,0 +1,268 @@
+header {
+    display: flex;
+    width: 101%;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    font-size: 14px;
+
+    text-align: center;
+    background-color: rgb(107, 93, 80);
+    color: white;
+
+    margin-left: -9px;
+    margin-top: -10px;
+    position: fixed;
+    z-index: 10;
+
+}
+
+main {
+    /* background-color: #bd8484; */
+
+
+}
+
+
+.top {
+    /* background-color: #b2d65e; */
+    position: relative;
+    top: 90px;
+    margin-left: 80px;
+    margin-right: 160px;
+    height: 200px;
+    width: auto;
+}
+
+.mid {
+    /* background-color: #5faece; */
+    position: relative;
+    top: 100px;
+    width: 70%;
+    height: 320px;
+    margin-left: 80px;
+    margin-right: 160px;
+    margin-top: 20px;
+}
+
+.bottom {
+    /* background-color: #eedc3c; */
+    position: relative;
+    top: 100px;
+    width: 70%;
+    height: 300px;
+    margin-left: 80px;
+    margin-right: 160px;
+    margin-top: 20px;
+}
+
+.cart_txt {
+    color: black;
+    position: relative;
+    top: 130px;
+    left: 100px;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.toggle_back {
+    position: relative;
+    top: 100px;
+    left: 250px;
+    width: 150px;
+    height: 35px;
+    background-color: #e2e2e2;
+    border-radius: 24px;
+}
+
+.toggle_front {
+    position: absolute;
+    width: 80px;
+    height: 35px;
+    background-color: #6f7d66;
+    border-radius: 24px;
+}
+
+.fast {
+    position: relative;
+    left: 265px;
+    top: 70px;
+    font-size: 12px;
+}
+
+.slow {
+    position: relative;
+    left: 285px;
+    top: 70px;
+    font-size: 12px;
+
+}
+
+.orderListbtns {
+    position: relative;
+    display: flex;
+    background-color: rgb(182, 172, 152, 0.5);
+    width: 92%;
+    height: 50px;
+    margin-left: 80px;
+    margin-right: 20px;
+    margin-top: 20px;
+    align-items: center;
+    border-radius: 3px;
+}
+
+.all {
+    position: relative;
+    left: 50px;
+
+}
+
+.keep {
+    position: relative;
+    left: 80%;
+    width: 75px;
+    padding: 4px;
+    background-color: #f7f7f7;
+    border: none;
+    border-radius: 2px;
+}
+.keep:hover{
+    background-color: rgb(247, 247, 247, 0.8);
+    cursor: pointer;
+}
+.keep:active{
+    background-color: rgb(247, 247, 247, 0.7);
+    cursor: pointer;
+    box-shadow: 0px 1px 1px rgba(116, 109, 109, 0.2);
+}
+
+
+.delete {
+    position: relative;
+    left: 81%;
+    width: 75px;
+    padding: 4px;
+    background-color: #f7f7f7;
+    border: none;
+    border-radius: 2px;
+}
+.delete:hover{
+    background-color: rgb(247, 247, 247, 0.8);
+    cursor: pointer;
+}
+.delete:active{
+    background-color: rgb(247, 247, 247, 0.7);
+    cursor: pointer;
+    box-shadow: 0px 1px 1px rgba(116, 109, 109, 0.2);
+}
+
+.orderList {
+    position: relative;
+    width: 92%;
+    margin-left: 80px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.name {
+    width: 800px;
+    text-align: center;
+    height: 30px;
+}
+
+.noproduct {
+    height: 210px;
+}
+
+.event {
+    position: relative;
+    display: flex;
+    /* background-color: #e0e0e050; */
+    width: auto;
+    height: 80px;
+    margin-left: 80px;
+    margin-right: 20px;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.eventList {
+    position: relative;
+    height: 80px;
+    background-color: #f7f7f7f7;
+    width: 400px;
+    border-radius: 5px;
+}
+
+.eventTxt {
+    font-size: 13px;
+    margin: 10px;
+    margin-left: 30px;
+}
+
+
+.delivery {
+    position: relative;
+    width: 92.5%;
+    margin-left: 80px;
+    margin-top: 20px;
+    height: 100px;
+    border: 1px solid rgb(91, 77, 65, 0.5);
+    border-radius: 3px;
+}
+
+aside {
+    /* background-color: #ad31e7; */
+    float: right;
+    width: 300px;
+    height: 320px;
+    position: relative;
+    top: 320px;
+    margin-right: 160px;
+
+}
+
+.order {
+    display: flex;
+    border: 1px solid #6b5d50;
+    border-radius: 7px;
+    height: 320px;
+    justify-content: center;
+}
+
+.orderMenu {
+    position: relative;
+    width: 240px;
+    height: 280px;
+    margin: 20px;
+    border: none;
+
+}
+
+.orderbtn {
+    width: 200px;
+    padding: 7px;
+    position: relative;
+    text-align: center;
+    margin-left: 17px;
+    height: 50px;
+    top: 5px;
+    background-color: rgb(119, 37, 16);
+    border-style: none;
+    color: white;
+    border-radius: 9px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.orderbtn:hover {
+    background-color: rgba(119, 37, 16, 0.8);
+    cursor: pointer;
+}
+
+.orderbtn:active {
+    background-color: rgba(119, 37, 16, 0.75);
+    cursor: pointer;
+    box-shadow: 0px 1px 1px rgba(41, 41, 41, 0.35);
+}

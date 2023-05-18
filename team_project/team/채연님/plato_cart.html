@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="plato_cart.css">
+    <script src="https://kit.fontawesome.com/954a9fc32b.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="leftbox">
+            <a href="">추천도서</a><a href="">공지사항</a>
+        </div>
+        <h2>
+            Flato
+        </h2>
+        <div class="rightbox">
+            <a href="">로그인</a><a href="">회원가입</a><a href="">마이페이지</a><a href="">장바구니</a>
+        </div>
+    </header>
+    <aside>
+        <div class="aside">
+            <div class="order">
+                <table class="orderMenu">
+                    <tr>
+                        <td>상품금액</td>
+                        <td>0원</td>
+                    </tr>
+                    <tr>
+                        <td>배송비</td>
+                        <td>0원</td>
+                    </tr>
+                    <tr>
+                        <td>결제예정금액</td>
+                        <td>0원</td>
+                    </tr>
+                    <tr>
+                        <td>적립예정포인트</td>
+                        <td>0원</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button class="orderbtn">주문하기</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </aside>
+    <main>
+        <div class="top">
+            <span class="cart_txt">장바구니(0)</span>
+            <div class="toggle_back">
+                <div class="toggle_front"></div>
+
+            </div>
+            <span class="fast">빠른배송</span>
+            <span class="slow">일반배송</span>
+        </div>
+        <div class="mid">
+            <div class="orderListbtns">
+                <span class="all"><input type="checkbox" name="all" id="all">전체</span>
+                <button class="keep">보관</button>
+                <button class="delete">삭제</button>
+            </div>
+            <div class="orderListTbl">
+                <table class="orderList" style="border-bottom: 1px solid rgb(91, 77, 65, 0.4);">
+                    <thead style="background-color: rgb(152, 161, 168, 0.2);">
+                        <tr>
+                            <th class="name">상품명</th>
+                            <th>수량</th>
+                            <th>가격</th>
+                        </tr>
+                    </thead>
+                    <tr class="productList">
+                        <td class="noproduct" colspan="3" style="text-align: center; color: rgb(66, 57, 48, 0.6);">
+                            <i class="fa-sharp fa-solid fa-circle-exclamation fa-2xl"
+                                style="color: rgb(66, 57, 48, 0.2);"></i><br><br>장바구니에 담긴 상품이 없습니다.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="event">
+                <div id="event1" class="eventList">
+                    <div class="eventTxt">
+                        <p><b>토스페이</b></p>
+                        생에 첫 결제 3천원 즉시 할인
+                    </div>
+                </div>
+                <div id="event2" class="eventList">
+                    <div class="eventTxt">
+                        <p><b>모바일팝</b></p>
+                       <span> 10% 즉시 할인</span>
+                </div>
+                </div>
+                <div id="event3" class="eventList">
+                    <div class="eventTxt">
+                        <p><b>카카오페이</b></p>
+                        5만원 이상 2천원 즉시 할인
+                    </div>
+                </div>
+            </div>
+            <div class="del_info">
+                <table class="delivery">
+                    <tr>
+                        <td rowspan="2" style="text-align: center; background-color: #d7d1cb;">배송일 안내</td>
+                        <td> &nbsp;&nbsp;배송지 : 서울특별시 강남구 역삼동</td>
+                    </tr>
+                    <tr>
+                        <td> &nbsp;&nbsp; <span style="font-size: 13px; color: rgb(58, 88, 114);">카트에 상품을 담으시면 도착 예상일을
+                                안내해드립니다.</span> </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

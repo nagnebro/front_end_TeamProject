@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>그리드 area</title>
+  <style>
+
+    /*그리드 area는 영역이름을 작성해서 아이템들을 저장한다
+    */
+
+
+    .container {
+      margin-right: 30px;
+      display: grid;
+      width: 300px;
+      grid-template-rows: repeat(3, 100px);
+      grid-template-columns: repeat(3, 1fr);
+      border: 3px solid blue;
+      /*
+      각 item 요소마다 grid-areas 속성으로 영역이름을 지정하고 grid-template-area로 렌더링한다.
+      item 영역을 비워두려면 . (dot) 혹은 none을 찍고 대부분 .을 사용한다.
+      */
+
+      grid-template-areas :  /*속성에 해당하는 블럭들이 아래 처럼 배치된다.*/
+              "header header header"
+      "main . aside"
+      ". footer footer";
+
+      /*갭을 이용해서 간격을 설정한다.*/
+
+      /*row-gap: 30px;*/
+      /*column-gap : 10px;*/
+
+      gap : 30px 10px;
+
+    }
+
+    .container .item:nth-child(1){
+      grid-area : header;
+    }
+
+    .container .item:nth-child(2){
+      grid-area : main;
+    }
+
+    .container .item:nth-child(3){
+      grid-area : aside;
+    }
+
+    .container .item:nth-child(4){
+      grid-area : footer;
+    }
+
+    .container .item{
+      border : 6px solid red;
+    }
+
+    .container2{
+      margin-right: 30px;
+      display: grid;
+      width: 300px;
+      grid-template-rows: repeat(3, 100px);
+      grid-template-columns: repeat(3, 1fr);
+      border: 3px solid blue;
+      /*grid-gap : 50px 30px;*/
+
+      grid-template-areas:
+        "header header header"
+        "main . ."
+        "main . aside"
+      "footer footer footer";
+    }
+    .container2 .item:nth-child(1){
+      grid-area : header;
+    }
+    .container2 .item:nth-child(2){
+      grid-area : main;
+    }
+    .container2 .item:nth-child(3){
+      grid-area : aside;
+    }
+    .container2 .item:nth-child(4){
+      grid-area : footer;
+    }
+    .container2 .item{
+      border : 3px solid orange;
+    }
+  </style>
+</head>
+<body>
+
+
+<div class="container">
+
+  <div class="item">Header</div>
+  <div class="item">Main</div>
+  <div class="item">Asdie</div>
+  <div class="item">Footer</div>
+</div>
+
+
+<div class="container2">
+
+  <div class="item">Header</div>
+  <div class="item">Main</div>
+  <div class="item">Asdie</div>
+  <div class="item">Footer</div>
+</div>
+
+
+
+</body>
+</html>

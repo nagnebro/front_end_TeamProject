@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1번 문제</title>
+  <style>
+    span{
+      display : inline-block;
+      width: 90px;
+      font-weight : bold;
+      font-size : 20px;
+    }
+   input[type=textarea]{
+      height: 70px;
+    }
+   input[type=text],input[type=textarea]{
+     width: 200px;
+     margin-bottom: 10px;
+   }
+   input[value=작성하기]{
+     margin-top: 20px;
+     margin-left: 100px;
+   }
+
+   .box{
+     width: 600px;
+     height: 250px;
+     border : 1px solid black;
+     margin-bottom: 20px;
+   }
+
+   #notice{
+     width: 120px;
+     position : relative;
+     background-color: white;
+     top: 10px;
+     left: 30px;
+   }
+   .innerbox{
+     padding-left: 30px;
+     padding-top: 30px;
+   }
+   hr{
+     position : relative;
+     width: 600px;
+    margin : 0;
+   }
+
+
+
+    table{
+        text-align: left;
+        width: 900px;
+    }
+.table input{
+    background-color: red;
+    height: 100%;
+}
+
+    td:nth-child(1){
+        width: 50px;
+        height: 10px;
+    }
+
+    td:nth-child(2){
+    width: 400px;
+}
+
+    td:nth-child(3){
+        width: 100px;
+    }
+
+    td:nth-child(4){
+        width:100px;
+    }
+
+    tr:first-child, tr:last-child{
+        background-color: orange;
+        color : white;
+        text-align: center;
+    }
+
+    table input{
+        width: 100px;
+    }
+  </style>
+</head>
+<body>
+
+<div id="notice">공지사항 작성하기</div>
+
+<form action="insert.no" method="post">
+<div class="box">
+  <div class="innerbox">
+<span>제목</span><input type="text" placeholder="제목을 입력하시오" name="title" required><br>
+<span>제목</span><input type="textarea" placeholder="내용을 입력하시오" name="content" required><br>
+<span>첨부파일</span><input type="button" value="파일선택" name="uploadFile">선택된 파일 없음
+<br>
+<input type="button" value="작성하기">
+  </div>
+</div>
+</form>
+<hr>
+
+
+
+
+<table border="1">
+
+    <tr>
+
+        <td>번호</td>
+        <td colspan="2">제목</td>
+        <td>작성자</td>
+        <td>작성일</td>
+        <td>조회수</td>
+    </tr>
+
+    <tr>
+
+        <td>1</td>
+        <td>공지사항 제목9</td>
+        <td><input type="button" value="바로가기"></td>
+        <td>user1</td>
+        <td>2021-03-29</td>
+        <td>35</td>
+    </tr>
+    <tr>
+
+        <td>1</td>
+        <td>공지사항 제목9</td>
+        <td><input type="button" value="바로가기"></td>
+        <td>user1</td>
+        <td>2021-03-29</td>
+        <td>35</td>
+    </tr>
+    <tr>
+
+        <td>1</td>
+        <td>공지사항 제목9</td>
+        <td><input type="button" value="바로가기"></td>
+        <td>user1</td>
+        <td>2021-03-29</td>
+        <td>35</td>
+    </tr>
+    <tr>
+
+        <td>1</td>
+        <td>공지사항 제목9</td>
+        <td><input type="button" value="바로가기"></td>
+        <td>user1</td>
+        <td>2021-03-29</td>
+        <td>35</td>
+    </tr>
+    <tr>
+
+        <td>1</td>
+        <td>공지사항 제목9</td>
+        <td><input type="button" value="바로가기"></td>
+        <td>user1</td>
+        <td>2021-03-29</td>
+        <td>35</td>
+    </tr>
+
+    <tr>
+
+        <td colspan="4">전체공지사항 갯수</td>
+        <td colspan="2">5개</td>
+    </tr>
+
+
+</table>
+</body>
+
+<script>
+
+
+</script>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>support</title>
+    <link rel="stylesheet" href="notice.css">
+</head>
+
+<header>
+    <div class="leftbox">
+        <a href="">추천도서</a><a href="">공지사항</a>
+    </div>
+    <h2>
+        Flato
+    </h2>
+    <div class="rightbox">
+        <a href="">로그인</a><a href="">회원가입</a><a href="">마이페이지</a><a href="">장바구니</a>
+    </div>
+</header>
+<div class="test">
+    <div class="container">
+
+        <h2 class="notice">CONTACT :</h2>
+        <div class="co">
+            <div class="btnConatiner">
+                <p class="notice-text">온라인 상담</p>
+                <span class="stext">궁금하신 점은 언제든 플라톤 아카데미에 문의주세요.</span>
+                <br>
+                <div class="btn-Box">
+                    <button class="btns" id="btn2" onclick="location.href='notice.html'">공지사항</button>
+                    <button class="btns" id="btn3" onclick="location.href='faq.html'">자주하는 질문</button>
+                    <button class="btns" id="btn1" onclick="location.href='support.html'">온라인 상담</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CONTACT 왼쪽 화면 끝 -->
+
+
+    <!-- 오른쪽 화면 시작 -->
+    <div class="subContSec" id="support_container1">
+        <img src="https://academy.metheus.co.kr/images/contents/contact_bgimg.png" alt="" class="support_img">
+
+
+        <form action="submit" class="contact_form">
+
+            <div class="support_title">
+
+                <p class="support_information">기본 정보</p>
+                <span class="support_text">
+                    <!-- ::before -->
+                    필수입력 항목</span>
+            </div>
+            <div class="container3">
+
+                <div class="support_list">
+                    <p class="list_title">문의유형
+                        <i></i>
+                    </p>
+
+                    <span class="list_title">
+                        <select name="" id="stl" class="title_list">
+                            <option value="0">선택해주세요.</option>
+                            <option value="1">도서 대여</option>
+                            <option value="2">도서 문의</option>
+                            <option value="3">결제 오류</option>
+                            <option value="4">시스템 장애 </option>
+                            <option value="5">기타</option>
+                        </select>
+                    </span>
+                </div>
+
+                <div class="support_list">
+                    <p class="list_title">이름
+                        <i></i>
+                    </p>
+
+                    <span class="list_title">
+                        <input type="text" class="title_list" placeholder="이름을 입력해주세요">
+                    </span>
+                </div>
+
+                <div class="support_list">
+                    <p class="list_title">연락처
+                        <i></i>
+                    </p>
+
+                    <span class="list_title">
+                        <input type="text" class="title_list" placeholder="(-)를 제외한 연락처를 입력해주세요">
+                    </span>
+                </div>
+
+                <div class="support_list">
+                    <p class="list_title">이메일
+                        <i></i>
+                    </p>
+
+                    <span class="list_title">
+                        <input type="text" class="title_list" placeholder="이메일을 입력해주세요 (예:abc@abc.com)">
+                    </span>
+                </div>
+
+                <div class="support_list">
+                    <p class="list_title">제목
+                        <i></i>
+                    </p>
+
+                    <span class="list_title">
+                        <input type="text" class="title_list" placeholder="상담 내용 제목을 입력해주세요">
+                    </span>
+                </div>
+
+                <div class="support_list">
+                    <p class="list_title">상담 내용
+                        <i></i>
+                    </p>
+
+                    <span class="list_title">
+                        <textarea name="" id="" cols="95" rows="10" class="title_list"
+                            placeholder="상담 내용을 입력해주세요"></textarea>
+                    </span>
+                </div>
+
+
+
+            </div> <!-- div.container3 끝-->
+            <div class="support_title">
+
+                <p class="support_information">개인 정보 처리 방침</p>
+
+            </div>
+            <div class="privacy_policy">
+                <ul>
+                    <li>
+                        <span>1.</span>
+                        <div class="private_policy_text">수집하는 개인정보의 항목
+                            <br>
+
+                            - 필수항목 : 이름, 연락처, 이메일
+
+                        </div>
+                    </li>
+                    <li>
+                        <span>2.</span>
+                        <div class="private_policy_text">개인정보의 수집 및 이용 목적<br>
+                            회사는 수집한 개인정보를 다음의 목적을 위해 활용 합니다.
+                            <br>
+                            온라인상담 : 서비스 제공에 관한 계약 이행 및 민원처리, 고지 사항 전달
+                            <br>
+
+                        </div>
+                    </li>
+                    <li>
+                        <span>3.</span>
+                        <div class="private_policy_text">개인정보 파기 시기
+                            <br>
+                            회사는 개인정보 수집 및 이용목적이 달성된 후에는 예외 없이 해당 정보를 지체 없이 파기합니다.
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="agree_button">
+                <label for="" class="type_radio">
+                    <input type="checkbox" class="type_checkbox"> 개인정보의 수집 및 이용목적에 동의합니다.
+                </label>
+            </div>
+
+            <div class="button_box">
+                <button class="cancle">취소</button>
+                <button class="confirm">등록</button>
+            </div>
+    </div><!-- div.subContSec 끝-->
+
+    </form>
+</div>
+
+</body>
+
+</html>

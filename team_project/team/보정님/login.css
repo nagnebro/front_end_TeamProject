@@ -1,0 +1,159 @@
+*{
+    font-style: normal;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: #D7D1CB;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    justify-content: center;
+    font-size: 16px;
+    outline: none;
+
+
+}
+
+div{
+    display: block;
+}
+
+
+
+header{
+    border: 1px solid black;
+    margin: 10px;
+}
+
+form{
+    display: block;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.log{
+    color: rgba(255,255,255,0.7);
+    font-size: 16px;
+    outline: none;
+}
+fieldset{
+    background-color: #685D50;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 350px;
+    height: 400px;
+
+}
+.input{
+    display:inline-flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 220px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.dot{
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 3px;
+}
+
+button{
+    margin: 3px;
+}
+#btn1{
+    background-color:  #524437 ;
+}
+
+#btn2{
+    background-color: #524437;
+}
+
+#btn1:hover{
+    background-color:#a7998b ;
+}
+#btn2:hover{
+    background-color:#a7998b ;
+}
+
+.find_btn{
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 8px;}
+
+#find:hover{
+    font-size: 13px;
+    color: #2e251d;
+    font-weight: bold;
+}
+
+p{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+.or{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    color: rgba(255,255,255,0.7);
+    margin: 8px 0px;
+    padding: 5px;
+}
+
+.or::before{
+    content: "";
+    flex-grow: 1;
+    margin: 0px 5px;
+    height: 1px;
+    font-size: 0px;
+    line-height: 0px;
+    background: rgba(255,255,255,0.7);
+}
+
+.or::after {
+    content: "";
+    flex-grow: 1;
+    margin: 0px 5px;
+    height: 1px;
+    font-size: 0px;
+    line-height: 0px;
+    background: rgba(255,255,255,0.7);
+}
+
+.img{
+
+    width: 50px;
+    height: 50px;
+    display:inline;
+    margin: 20px;
+    padding: 20px;
+}
+
+img:hover{
+    width: 60px;
+    height: 60px;
+    
+}

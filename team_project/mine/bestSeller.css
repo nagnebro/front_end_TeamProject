@@ -1,0 +1,397 @@
+body,html {
+
+    width: 100%;
+    height: 100%;
+    margin  : 0;
+    position : absolute;
+
+}
+
+
+/*여기서부터 헤더 태그*/
+header{
+
+
+
+    display : flex;
+    width: 101%;
+    justify-content : space-between;
+    align-items : center;
+    height: 100px;
+    font-size : 14px;
+
+
+    backdrop-filter: blur(20px);
+    text-align: center;
+    /*background-color :  rgb(107,93,80);*/
+
+
+    margin-left: -9px;
+    margin-top: -10px;
+    position : fixed;
+    border-bottom : 1px solid wheat;
+
+
+    /*-webkit-backdrop-filter: brightness(1.1) blur(20px);*/
+    /*얘는 어떠한 역하릉ㄹ 하지 않는다.
+    */
+    /*mix-blend-mode: overlay;
+    이 속성은 헤더의 블럭의 backgroudn 뿐만 아니라 내부의 요소들(텍스트 같은 인라인 요소들) 모두 backdrop-filter에 맞게
+    변경하기 때문에 글자의 선명도가 떨어지게 된다.
+    */
+
+
+    z-index: 999;
+
+}
+
+
+.leftbox a:nth-child(1), .rightbox a:nth-child(n+1):nth-child(-n+3){
+    border-right : 1px solid darkgray;
+
+}
+
+#besttitle{
+    text-align : center;
+    font-size : 22px;
+}
+
+#home{
+    font-size : 35px;
+}
+
+header a{
+    transition : 0.5s;
+    color : black;
+    width: 90px;
+    height: 100%;
+    text-decoration: 0;
+    font-size : 13px;
+}
+a:hover{
+    cursor : pointer;
+
+
+    /*transition : 0.5s;*/
+    /*color : #772510;*/
+
+    /*
+    css에서 처리 가능한 이벤트와 js에서 처리가능한 이벤트가 다른데 이때 비슷한 기능을 하는
+    이벤트를 css 와 js로 분리시켜놓으면 씹히거나 한 번 동작한 후 동작하지 않는 등의 문제가 발생
+    */
+}
+
+
+.leftbox, .rightbox{
+
+    display : flex;
+    width: 33%;
+    margin-left: 30px;
+}
+
+.rightbox{
+    justify-content: right;
+    margin-right: 30px;
+}
+
+/*여기까지 헤더*/
+
+
+
+
+
+.container{
+    position : relative;
+    top: 100px;
+    height: 1300px;
+    /*background-color: aqua;*/
+}
+
+.article{
+    display : flex;
+    width: 100%;
+    height : 350px;
+    background-color : #E2E2E2;
+    /*justify-content: center;*/
+    align-items: center;
+
+}
+.imgbox{
+    /*margin-right: 100px;*/
+
+}
+
+.article img{
+    position : relative;
+    left : 350px;
+    width: 200px;
+    transition : 1s;
+    /* filter: drop-shadow(10px 6px 6px #c3c3c3);
+
+    filter 스타일링을 추가하면 fixed를 씹어버리는 문제가 발생한다.
+    */
+
+}
+
+.article img:hover{
+    width: 210px;
+    transition : 1s;
+}
+
+
+
+
+.informbox{
+    position : absolute;
+    left : 600px;
+    margin-left: 30px;
+    height: 270px;
+    /*border : 1px solid black;*/
+
+}
+
+#price{
+    color : black;
+    font-weight : bold;
+    font-size : 25px;
+
+}
+
+#title{
+    font-size : 20px
+}
+
+
+
+#buy{
+    width: 120px;
+    height: 40px;
+    border : 0;
+    border-radius : 5px;
+    font-size : 16px;
+    background-color: burlywood;
+    color:white;
+    padding : 0;
+    margin-right: 10px;
+}
+#bag{
+    width: 70px;
+    height: 40px;
+    border : 0;
+    border-radius : 5px;
+    font-size : 14px;
+    background-color: burlywood;
+    color:white;
+
+}
+#buy:hover,#bag:hover{
+    cursor : pointer;
+    background-color: wheat;
+}
+.buttonbox{
+    margin-top: 100px;
+    display : flex;
+    align-items: center;
+}
+
+/*
+position realative로 설정시 fixed를 씹고 위로 올라오게 된다. 상대적인 좌표를 이용함으로써
+겹치는 것이 아닌 위로올라오는 듯
+*/
+
+.tab{
+
+    display :flex;
+    width: 1000px;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+    margin : auto;
+    margin-top: 50px;
+    border-bottom : 1px solid black;
+}
+.tab a:nth-child(1){
+
+    border-right : 0;
+
+}
+.tab a:nth-child(2){
+
+    border-right : 0;
+
+}
+.tab a:nth-child(3){
+
+    border-right : 0;
+
+}
+.tab a{
+
+    width: 180px;
+    height: 50px;
+    border : 1px solid black;
+    color : black;
+    border-bottom : 0px;
+    line-height : 50px;
+    text-decoration: 0;
+
+    /*display : flex;*/
+}
+
+.bottombox{
+    width: 1000px;
+    height: 650px;
+    border-top : 1px solid black;
+    margin :auto;
+    border-top : 0;
+    padding-top : 50px;
+
+    /*padding-top : 30px;*/
+}
+
+
+
+.bottom_inner{
+    display : flex;
+    width: 80%;
+    height: 200px;
+    margin : auto;
+
+
+}
+
+._title{
+
+    width: 25%;
+    height: 80px;
+    font-size : 25px;
+    font-weight : bold;
+}
+
+._content{
+    width: 66%;
+    height: 170px;
+    font-size : 14px;
+    border-bottom : 1px solid burlywood;
+}
+
+li{
+    list-style : none;
+    margin-bottom: 10px;
+}
+
+ul{
+    padding : 0;
+    margin : 0;
+
+}
+
+
+.bottombox .bottom_inner:nth-child(3) ._content{
+
+    line-height : 25px;
+    height: 210px;
+}
+
+.disappear{
+    display : none;
+}
+
+
+.bottom_tab4{
+
+    width: 80%;
+    height: 220px;
+    margin : auto;
+
+    border-bottom : 1px solid burlywood;
+    margin-bottom: 20px;
+
+}
+
+.bottom_tab4 ._content{
+    border : 0;
+    line-height : 25px;
+}
+
+.bottom_tab4:nth-child(2){
+    height: 350px;
+
+
+}
+
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    font-size : 13px;
+    display : flex;
+    color : white;
+    margin-top: 150px;
+    align-items : center
+    /*justify-content: center;*/
+
+}
+
+#left, #center,#right{
+
+    width: 33%;
+    height: 70%;
+    display : flex;
+    /*텍스트를 정렬하기 위해 footer의 각 박스들을 flex box로 만들어서 텍스트 가로,세로 정렬을 실시*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#left, #center{
+    width: 45%;
+    border-right: 1px solid #E2E2E2;
+}
+
+#right .txts:nth-child(1) span{
+    font-size : 18px
+}
+
+#right .txts:nth-child(n+1):nth-child(-n+3) span{
+
+    width: 200px;
+}
+
+footer span, footer .lspan{
+
+    width: 120px;
+    color : darkgray;
+    font-size : 12px
+}
+footer .lspan{
+
+    color: white;
+}
+
+.txts{
+    margin-bottom: 10px;
+    display : flex;
+    /**/
+
+}
+
+.booklist img:nth-child(n+1):nth-child(-n+5):hover{
+
+    width: 60px;
+    height: 80px;
+    transition : 0.5s;
+}
+
+
+#contentbox{
+
+    width: 500px;
+    height: 160px;
+    line-height : 22px;
+    margin-bottom: 20px;
+
+}
+
+

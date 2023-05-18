@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입1</title>
+    <link rel="canonical" href="/article.html" />
+    <link rel="stylesheet" href="join1.css">
+    <script src="join2.js"></script>
+</head>
+
+
+<body>
+    <div class="join">
+        <header>
+            <h3>JOIN US</h3>
+        </header>
+        <br>
+        <form>
+        <fieldset>
+        <div class="join_top">
+            <span style="font-size: 20px;">기본정보 입력</span><br><br>
+            <div class="input">
+                <div id="input1">
+                    
+                <input onFocus="this.value='';return true;" 
+                id="uid" name="uid" type="text" value="아이디" required>
+                <input id="btn01" type="button" value="중복확인">
+                <p>영소문자 / 숫자 혼용 5~15자리</p></div>
+                <div id="input2">
+                <input onFocus="this.value='';return true;" 
+                id="upas" type="text" value="비밀번호" required>
+                <p>영문+숫자+특수문자 중 2가지 이상을 조합하세요</p>
+                <input onFocus="this.value='';return true;" 
+                id="upas1" type="text" value="비밀번호 확인" required><br>
+                <input onFocus="this.value='';return true;" 
+                id="uname" type="text" value="이름" required>
+
+                <input onFocus="this.value='';return true;" 
+                id="unum" type="text" value="전화번호">
+
+                <p>생년월일</p>
+                <input id= "ubirth" type="date" value="생년월일" >
+                <input onFocus="this.value='';return true;" 
+                id="uemail" type="email" value="이메일" >
+                <br>
+                <button onclick="validate()"><a href="completion.html"> 다음</a></button>
+                </div>
+            </div>
+        </div>
+        </fieldset>
+    </form>
+        </div>
+</body>
+</html>

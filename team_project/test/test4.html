@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+
+    .container {
+      width: 1005px;
+      height: 500px;
+      background: url("../mine/images/book1.png") no-repeat;
+    }
+
+    .box1{
+
+      width: 300px;
+      height: 300px;
+      backdrop-filter: blur(20px);
+      /*background-color: red;*/
+      position : fixed;
+
+
+    }
+
+    .background{
+        width: 500px;
+        height: 200px;
+
+        background-image : url("../mine/images/home1.jpg");
+        background-size : cover;
+    }
+
+  </style>
+</head>
+<body>
+
+
+<div class="container">
+
+
+</div>
+
+<div class="background">
+
+
+</div>
+
+<input type="text">
+</body>
+
+<script>
+    const background = document.querySelector(".background")
+    const btn = document.querySelector("input");
+
+    btn.addEventListener('click',function(){
+
+
+        // background.style = "background-image:url(../images/home2.jpg)"
+        background.style.backgroundImage = "url(../images/home3.jpg)"
+
+    })
+</script>
+</html>

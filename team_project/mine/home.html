@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="home.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="demo.css">
+
+    <!-- 나중에 따로 css파ㅣ일로 정리해-->
+</head>
+<body>
+
+
+<header>
+    <div class="leftbox">
+        <a href="">추천도서</a><a href="">공지사항</a>
+    </div>
+    <h2>
+        <a href="home.html"><span id="home">Flato</span></a>
+    </h2>
+    <div class="rightbox">
+        <a href="">로그인</a><a href="">회원가입</a><a href="">마이페이지</a><a href="">장바구니</a>
+    </div>
+
+</header>
+
+<div class="outer">
+</div>
+
+<!-- 빈박스를 집어넣는다-->
+
+
+<div class="promotion">
+
+    <p> 카테고리별 다양한 맞춤 추천 도서<br>
+       지금 확인해보세요!
+    <a href="">자세히 보기 ></a>
+    </p>
+    <div class="eventbox">
+
+
+        <img src="images/book21.jpg" alt="">
+        <img src="images/book22.jpg" alt="">
+        <img src="images/book23.jpg" alt="">
+        <img src="images/book24.jpg" alt="">
+
+    </div>
+    <div class="eventbtm">
+
+    <p>5월, 꼭 읽어야 할 필독도서</p>
+
+
+
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/book11.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/book12.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/book13.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/book14.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/book15.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/book16.jpg" alt=""></div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    </div>
+
+</div>
+
+</div>
+
+
+<div class="article">
+
+    <div class="left">
+        <div>차별화된 서적관리</div>
+        <div>
+            Flato 서점에서 다양한 최신 도서들을 즐겨보세요!
+        </div>
+    </div>
+
+    <div class="right">
+
+        <img src="images/homebook.png" alt="">
+    </div>
+
+</div>
+
+<div class="best">
+    <h2>Flato's Today Best Seller</h2>
+
+    <hr>
+    <div class="bestleft">
+        <div>
+            <img src="images/book1.png" class="bigimg" onclick="bestSeller()">
+        </div>
+        <div class="bestcenter">
+            <h3><span id="besttitle">오늘의 베스트셀러 :</span> <span id="booktitle">소크라테스의 변명</span></h3>
+
+            <div id="contentbox">
+            <span id="content">서양 철학의 근간이 된 소크라테스 사상의 정수를 한 권으로 만나다.
+            그리스어 원전 완역본으로 읽는 인류 최고 지성인의 영원한 유산
+            참된 진리 앞에서 죽음도 기쁘게 받아들인 탁월한 지성인이자 정의의 철학자,
+            소크라테스의 사상을 한 권에 담았다. 소크라테스는 기원전 5세기경 상대주의적이고 실용적인
+            진리를 내세운 소피스트에 대항하여 절대적이고 변하지 않는 진리를 추구하며, 질문과 대화를 통해
+            사람들의 무지를 일깨웠다. 그뿐만 아니라, 불경죄로 사형 선고를 받아 죽음에 이를 때까지 자신의 사상과
+            철학을 흔들림 없이 지켜 나가며 서양 철학의 근간이 되었다. 죽을 때까지 단 한 권의 책도 저술하지
+            않았지만 그의ß 사상은 모두 수제자인 플라톤에 의해 보존되어 전해졌다.
+
+            </span>
+            </div>
+            <div class="booklist">
+                <img src="images/book1.png" alt="">
+                <img src="images/book2.png" alt="">
+                <img src="images/book3.png" alt="">
+                <img src="images/book4.png" alt="">
+                <img src="images/book5.png" alt="">
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+<footer>
+
+    <div id="left">
+
+        <div class="txts">
+            <span class="lspan">Address</span>
+            <span>서울특별시 강남구 OO로</span>
+        </div>
+
+        <div class="txts">
+            <span class="lspan">Tel</span>
+            <span>02-1234-5678</span>
+        </div>
+
+        <div class="txts">
+            <span class="lspan">Fax</span>
+            <span>02-123-4567</span>
+        </div>
+
+        <div class="txts">
+            <span class="lspan">대표이사</span>
+            <span>홍길동</span>
+        </div>
+        <div class="txts">
+            <span class="lspan">사업자번호</span>
+            <span>123-45-67890</span>
+        </div>
+    </div>
+    <div id="center">
+
+        <div class="txts">
+            <span class="lspan">고객센터</span>
+            <span>1588-0000</span>
+
+        </div>
+
+        <div class="txts">
+            <span class="lspan">대량주문</span>
+            <span>khacademy@kh.com</span>
+        </div>
+
+
+    </div>
+    <div id="right">
+        <div class="txts">
+
+            <span class="lspan">Tel. 02-1234-5678</span>
+
+        </div>
+
+        <div class="txts">
+            <span class="lspan">평일 : 09:00 ~ 18:00</span>
+
+        </div>
+
+        <div class="txts">
+            <span class="lspan">주말 : 10:00 ~ 15:00</span>
+
+        </div>
+
+    </div>
+
+
+</footer>
+
+
+<div class="hid_content">
+
+    서양 철학의 근간이 된 소크라테스 사상의 정수를 한 권으로 만나다. 그리스어 원전 완역본으로 읽는 인류 최고 지성인의 영원한 유산
+    참된 진리 앞에서 죽음도 기쁘게 받아들인 탁월한 지성인이자 정의의 철학자,
+    소크라테스의 사상을 한 권에 담았다. 소크라테스는 기원전 5세기경 상대주의적이고 실용적인
+    진리를 내세운 소피스트에 대항하여 절대적이고 변하지 않는 진리를 추구하며, 질문과 대화를 통해
+    사람들의 무지를 일깨웠다. 그뿐만 아니라, 불경죄로 사형 선고를 받아 죽음에 이를 때까지 자신의 사상과
+    철학을 흔들림 없이 지켜 나가며 서양 철학의 근간이 되었다. 죽을 때까지 단 한 권의 책도 저술하지
+    않았지만 그의ß 사상은 모두 수제자인 플라톤에 의해 보존되어 전해졌다.
+</div>
+<div class="hid_content">
+    자바 프로그래머로써 반드시 알아야하는 것을 모두 담은책. 저자는 자바를 소개하는데 그치지 않고 프로그래머로써 꼭 알아야하는 내용들을 체계적으로 정리하였으며 200페이지에
+    달하는 지면을 객체지향개념에 할애함으로써 이 책 한 권이면 객체지향개념을 완전히 이해할 수 있도록 원리중심으로 설명하고 있다.
+
+    뿐만 아니라 자바의 최신 기능인 람다와 스트림을 상세히 소개하고 있으며, 그 밖에 자바의 최신버젼인 Java8의 새로운 기능들을
+    자세히 설명하고 있다. 그 밖에도 다른 서적들이 소홀히 다루는 지네릭스(generics), 애너테이션(annotation), 쓰레드(thread)와 같은 부분도 기초부터 응용까지 상세히 다룰 수 있다.
+</div>
+<div class="hid_content">
+    파이썬 4년 연속 베스트셀러 1위, 'Do it! 점프 투 파이썬'의 전면 개정판. 약 4년 동안의 피드백을 반영하여 초보자가 더 빠르게 입문하고, 더 깊이 있게 공부할 수 있도록 개정되었다.
+    단 한 문제를 풀어도 학습 효과를 극대화하기 위해 문제의 난도, 위치, 분량을 꼼꼼히 고려해 설계했다.
+    본문 속에는 문법을 정확히 이해했는지 그 자리에서 손쉽게 확인할 수 있는 '나 혼자 코딩' 문제를 넣었다.
+    장 하나를 끝낼 때마다 풍부하게 주어지는 '연습 문제'에서는 학습 내용을 점검하고 기초 실력을 탄탄하게 만들 수 있다.
+</div>
+<div class="hid_content">"필명 ‘세이노(Say No)’는 당신이 믿고 있는 것들에" +
+    " ‘No!’를 외치고 제대로 살아가라는 뜻이다. 세이노는 지난 20여 년간 여러 칼럼을 통해" +
+    " 인생 선배로서 부와 성공에 대한 지혜와 함께 삶에 대한 체험적 지식을 나누어 주었다." +
+    " 그래서 그의 글을 좋아하는 사람들은 그를 ‘세이노 스승님’이라 부른다썬"
+</div>
+<div class="hid_content">
+    ‘연봉 10억 무자본 창업가’로 유명해진 그는 2020년, 단 20개의 영상으로 10만 구독자를 넘어서며 화제를 모았으나 곧장 미련 없이 유튜브를 그만뒀다.
+    이후 본업인 온라인 마케팅 비즈니스를 비롯해 다방면으로 사업을 확장하고 있다. 그 사이 ‘라이프해커 자청’이라는 캐릭터와 ‘무자본 창업’이라는 개념은 사람들의 고정관념을 깨는 상징이 됐다.
+    자청이 찾아낸 ‘역행자의 7단계 모델’을 통해 함께 ‘인생의 추월차선’으로 향하자.
+</div>
+</body>
+<script src="jquery-3.7.0.min.js"></script>
+<script src="home.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="demo.js">
+</script>
+</html>
