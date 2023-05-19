@@ -1,30 +1,70 @@
 *{
-    font-style: normal;
+    font-family: 'Noto Sans KR','Pretendard', sans-serif !important;
+    box-sizing: border-box;
 }
 
 body{
-    box-sizing: border-box;
+    
     background-color: #D7D1CB;
     text-align: center;
-    margin: 10px;
-    padding: 10px;
+    margin: 0 50 50 50;
+    padding: 30px;
     justify-content: center;
     font-size: 16px;
     outline: none;
 
 
+
+}
+
+.login{
+    display:block;
+
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
 }
 
 div{
     display: block;
+    padding: 0;
+    margin: 0;
 }
 
 
 
 header{
     border: 1px solid black;
-    margin: 10px;
+    margin: 8px;
 }
+
+/* input 글자 */
+
+input::placeholder{
+    color: rgba(255,255,255,0.7);
+    border: 5px;
+}
+
+/* home */
+#home{
+    width: 30px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 10%;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+}
+h3{
+margin-left: 35%;
+}
+
+/* */
+
+
 
 form{
     display: block;
@@ -41,27 +81,36 @@ form{
 }
 fieldset{
     background-color: #685D50;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    width: 350px;
-    height: 400px;
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    margin-top: 100px;
+    padding: 10;
+    border-radius: 20px;
+
 
 }
 .input{
+    margin-top: 35px;
     display:inline-flex;
     flex-direction: column;
     border-radius: 10px;
-    width: 220px;
+    width: 250px;
     text-align: center;
-    margin: 10px;
-    padding: 10px;
+ 
+
+}
+input{
+    margin-top: 10px;
+    height: 30px;
+    border-radius: 10px;
 }
 
 a{
     color: inherit;
     text-decoration: none;
-    padding: 10px;
+    padding: 20px;
+
 }
 
 .dot{
@@ -73,7 +122,10 @@ a{
 }
 
 button{
-    margin: 3px;
+
+    height: 35px;
+    margin-top: 10px;
+    border-radius: 50px;
 }
 #btn1{
     background-color:  #524437 ;
@@ -94,10 +146,12 @@ button{
 display: flex;
 align-items: center;
 justify-content: center;
-font-size: 8px;}
+font-size: 13px;
+margin-top: 20px;
+}
 
 #find:hover{
-    font-size: 13px;
+    font-size: 16px;
     color: #2e251d;
     font-weight: bold;
 }
@@ -107,20 +161,25 @@ p{
     margin: 0;
     padding: 0;
     display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
+    margin-block-start: 2em;
+    margin-block-end: 2em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
 
+span{
+    font-size: 20px;
+}
 
 .or{
+
     font-size: 14px;
     display: flex;
     align-items: center;
     color: rgba(255,255,255,0.7);
-    margin: 8px 0px;
-    padding: 5px;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .or::before{
@@ -143,17 +202,66 @@ p{
     background: rgba(255,255,255,0.7);
 }
 
-.img{
 
+
+.img{
+    display: inline;
+}
+
+/* input박스 투명도 조절 */
+#id, #password{
+    border: 2 solid ; 
+    background:transparent;
+    color: rgba(255,255,255,0.7);
+}
+
+/* 기둥 */
+
+.pc{
+    display: inline;
+}
+
+.flex_sb{
+    display:inline-flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#colimg{
+    vertical-align: top;
+    border: 0 none;
+    display:block;
+    width: auto;
+    height: 100%;
+
+
+}
+
+.blank{
+    opacity: 0;
+}
+
+/* */
+
+#img:hover{
     width: 50px;
     height: 50px;
-    display:inline;
-    margin: 20px;
-    padding: 20px;
-}
-
-img:hover{
-    width: 60px;
-    height: 60px;
     
 }
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* footer */
+
+footer{
+
+    border: 1px solid #6B5D50;
+    width: 100%;
+    height: 50px;
+}
+
+/* footer */

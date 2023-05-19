@@ -2,7 +2,7 @@ const background = document.querySelector(".background");
 const book_list = document.querySelectorAll(".booklist img");
 let bigimg = document.querySelector(".bigimg")
 const booktitle = document.querySelector("#booktitle")
-const content = document.querySelector("#content")
+const content = document.querySelector("#contentbox")
 const content_list = document.querySelectorAll(".hid_content")
 const header_a = document.querySelectorAll("header a")
 const article_title = document.querySelector(".article_title");
@@ -58,29 +58,39 @@ for (let i = 0; i < book_list.length; i++) {
         content.innerHTML = content_list[i].innerHTML;
 
     })
+
+
 }
 
+
 window.addEventListener('scroll', scrolling)
+
+
 $(function () {
-       $(window).on('scroll',function(){
+
+    $('#first_p').stop().animate({opacity: '1'}, 1000)
+
+    setTimeout(anime, 1000);
+
+    function anime() {
+        $('.eventbox').stop().animate({opacity: '1'}, 1200);
+    }
+
+    $(window).on('scroll', function () {
 
 
-            if (scrollY > 80) {
-                $('.eventbtm').stop().animate({opacity: '1'}, 500);
+        if (scrollY > 80) {
+            $('.eventbtm').stop().animate({opacity: '1'}, 500);
 
-                console.log("ss")
-                console.log("ss")
-                eventbtm.style = "border:1px solid black;"
-            }
-
-       })
-
-
+        }
+    })
 })
+
+
+
 
 function scrolling() {
 
-    console.log(scrollY)
     if (scrollY > 350) {
         for (let i = 0; i < header_a.length; i++) {
 
@@ -94,11 +104,8 @@ function scrolling() {
     }
 }
 
-    // console.log(background.style)
-    // background.style = `opacity:${opacity}`;
-
-
-
+// console.log(background.style)
+// background.style = `opacity:${opacity}`;
 
 
 // let time = 0;

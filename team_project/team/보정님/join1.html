@@ -8,49 +8,61 @@
     <link rel="canonical" href="/article.html" />
     <link rel="stylesheet" href="join1.css">
     <script src="join2.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
 </head>
-
 
 <body>
     <div class="join">
         <header>
+            <div class="header">    
+            <img id="home" src="image/home.png" href="main.html">
             <h3>JOIN US</h3>
+            </div>
         </header>
         <br>
-        <form>
+        <form name="join_form">
+            <div class="column flex_sb pc">
+
+                <img id="colimg" src="image/col.svg" alt="">
+                <img id="colimg" src="image/col.svg" alt="">
+                <img id="colimg" src="image/col.svg" alt="">
+                <img id="colimg" src="image/col.svg" alt="" class="blank">
+                <img id="colimg" src="image/col.svg" alt="">
+                <img id="colimg" src="image/col.svg" alt="">
+                <img id="colimg" src="image/col.svg" alt="">
+
+            </div>
+    
         <fieldset>
         <div class="join_top">
             <span style="font-size: 20px;">기본정보 입력</span><br><br>
             <div class="input">
                 <div id="input1">
-                    
-                <input onFocus="this.value='';return true;" 
-                id="uid" name="uid" type="text" value="아이디" required>
-                <input id="btn01" type="button" value="중복확인">
-                <p>영소문자 / 숫자 혼용 5~15자리</p></div>
+                    <input id="uid" name="uid" type="text" placeholder="아이디" required>
+                    <input id="btn01" type="button" value="중복확인">
+                    <p>영소문자 / 숫자 혼용 5~15자리</p></div>
                 <div id="input2">
-                <input onFocus="this.value='';return true;" 
-                id="upas" type="text" value="비밀번호" required>
-                <p>영문+숫자+특수문자 중 2가지 이상을 조합하세요</p>
-                <input onFocus="this.value='';return true;" 
-                id="upas1" type="text" value="비밀번호 확인" required><br>
-                <input onFocus="this.value='';return true;" 
-                id="uname" type="text" value="이름" required>
+                    <input id="upas" type="text" placeholder="비밀번호" required>
+                    <p>영문+숫자+특수문자 중 2가지 이상을 조합하세요</p>
+                    <input id="upas1" type="text" placeholder="비밀번호 확인" required><br>
+                    <input id="uname" type="text" placeholder="이름" required>
 
-                <input onFocus="this.value='';return true;" 
-                id="unum" type="text" value="전화번호">
+                    <input id="unum" type="text" placeholder="전화번호">
 
-                <p>생년월일</p>
-                <input id= "ubirth" type="date" value="생년월일" >
-                <input onFocus="this.value='';return true;" 
-                id="uemail" type="email" value="이메일" >
+                     <p>생년월일</p>
+                    <input id= "ubirth" type="date" placeholder="생년월일" >
+                    <br>
+                    <input id="uemail" type="email" placeholder="이메일" >
                 <br>
-                <button onclick="validate()"><a href="completion.html"> 다음</a></button>
+                    <button onclick="validate()"> 다음</button>
                 </div>
             </div>
         </div>
         </fieldset>
     </form>
+    <footer>
+    </footer>
         </div>
 </body>
 </html>

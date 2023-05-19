@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비밀번호 찾기</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+</head>
+<style>
+    *{
+        font-family: 'Noto Sans KR','Pretendard', sans-serif !important;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: #D7D1CB;
+    text-align: center;
+    justify-content: center;
+    font-size: 16px;
+    outline: none;
+
+
+}
+
+div{
+    display:block;
+}
+
+
+
+header{
+    border: 1px solid black;
+    margin: 10px;
+}
+
+/* home */
+#home{
+    width: 30px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 10%;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+}
+h3{
+margin-left: 35%;
+}
+
+/* */
+
+form{
+    display: block;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+fieldset{
+    background-color: #685D50;
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 450px;
+    position: absolute;
+    margin-top: 100px;
+    color: rgba(255,255,255,0.7);
+    border-radius: 20px;
+
+}
+.input{
+    display:inline-flex;
+    flex-direction: column;
+
+    text-align: left;
+    width: 250px;
+}
+/* input 단락 */
+#in1{
+    margin-top: 10px;
+}
+
+/* input 박스 */
+
+#txt{
+    margin-top: 7px ;
+    width: 250px;
+    height: 23px;
+    color: rgba(255,255,255,0.7);
+    font-weight: 5px;
+    border: 2 solid ; 
+    background:transparent;
+    border-radius: 10px;
+}
+
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+button{
+    width: 260px;
+    margin-top: 10px;
+    height: 35px;
+    border-radius: 50px;
+}
+#btn1{
+    background-color:  #524437 ;
+}
+
+#btn2{
+    background-color: #524437;
+}
+
+#btn1:hover{
+    background-color:#a7998b ;
+}
+#btn2:hover{
+    background-color:#a7998b ;
+}
+
+/* 기둥 */
+
+.pc{
+    display: inline;
+}
+
+.flex_sb{
+    display:inline-flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#colimg{
+    vertical-align: top;
+    border: 0 none;
+    display:block;
+    width: auto;
+    height: 100%;
+
+
+}
+.blank{
+    opacity: 0;
+}
+/* footer */
+
+footer{
+
+border: 1px solid #6B5D50;
+width: 100%;
+height: 50px;
+}
+
+/* footer */
+
+
+</style>
+<body>
+    <div class="find">
+        <header>
+            <div class="header">    
+            <img id="home" src="image/home.png" href="main.html"> 
+            <h3>Password 찾기</h3></div>
+        </header>
+        <br>
+        <form>
+            <div class="column flex_sb pc">
+
+                <img id="colimg" src="image/col.svg" alt="">
+                <img id="colimg" src="image/col.svg" alt="">
+                <img id="colimg" src="image/col.svg" alt="">
+                <img id="colimg" src="image/col.svg" alt="" class="blank">
+                <img id="colimg" src="image/col.svg" alt="">
+                <img id="colimg" src="image/col.svg" alt="">
+                <img id="colimg" src="image/col.svg" alt="">
+
+            </div>
+        <fieldset>
+        <div class="find1">
+            <span style="font-size: 20px;">plato</span><br><br>
+            <div class="input">
+                <div id="in1"> 아이디<br>
+                <input id="txt" type="text">
+                </div>
+                <div id="in1">
+                이름<br>
+                <input id="txt" type="text">
+                </div>
+                <div id="in1">
+                생년월일<br>
+                <input id="txt" type="text">
+                </div>
+                <div id="in1">
+                휴대폰<br>
+                <input id="txt" type="text">
+                </div>
+            <br>
+                <button id="btn1" value="비밀번호 찾기">인증번호 발송</button>
+                <button id="btn2" value="로그인 하기"><a href="login.html">로그인 하기</a></button>
+            </div>
+        </div>
+        </fieldset></form>
+        <footer></footer>
+        </div>
+</body>
+</html>

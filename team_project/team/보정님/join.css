@@ -1,5 +1,10 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+@font-face {
+    font-family:'Noto Sans KR','Pretendard', sans-serif !important; 
+    src: url(../Font/..);
+}
 *{
-    font-style: normal;
+    font-family: 'Noto Sans KR','Pretendard', sans-serif !important;
 }
 
 body{
@@ -22,8 +27,27 @@ div{
 
 header{
     border: 1px solid black;
-    margin: 10px;
+    margin: 8px;
 }
+
+/* home */
+#home{
+    width: 30px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 10%;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+}
+h3{
+margin-left: 35%;
+}
+
+/* */
+
 
 form{
     display: block;
@@ -37,40 +61,52 @@ form{
     color: rgba(255,255,255,0.7);
     font-size: 16px;
     outline: none;
+    margin-top: 10px;
 }
 fieldset{
     background-color: #685D50;
     display: flex;
-    text-align: center;
     justify-content: center;
-    width: 350px;
-    height: 400px;
-    margin: 10 10 10 10;
+    width: 400px;
+    height: 500px;
+    margin-top: 100px;
     padding: 10 ;
+    position: absolute;
+    border-radius: 20px;
 
 }
+
+
 .input{
+
     display:inline-flex;
     flex-direction: column;
     border-radius: 10px;
 }
+input{
 
+    height:30px;
+}
 a{
     color: inherit;
     text-decoration: none;
-    padding: 10px;
+    padding: 20px;
 }
 
 
 button{
     margin: 3px;
     width: 250px;
-    height: 30px;
+    height: 35px;
     display:block;
     text-align: center;
+    margin-top: 20px;
+    border-radius: 50px;
 }
 
-
+.join_end{
+    margin-top: 50px;
+}
 
 #btn1{
     background-color: #524437 ;
@@ -100,3 +136,39 @@ p{
 }
 
 
+/* 기둥 */
+
+.pc{
+    display: inline;
+}
+
+.flex_sb{
+    display:inline-flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#colimg{
+    vertical-align: top;
+    border: 0 none;
+    display:block;
+    width: auto;
+    height: 100%;
+
+
+}
+
+.blank{
+    opacity: 0;
+}
+
+/* footer */
+
+footer{
+
+    border: 1px solid #6B5D50;
+    width: 100%;
+    height: 50px;
+}
+
+/* footer */

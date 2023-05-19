@@ -1,13 +1,14 @@
+@import url('http://fonts.googleapis.com/earlyaccess/nanumgothic.css');
+
 *{
-    font-style: normal;
+    font-family: 'Noto Sans KR','Pretendard', sans-serif !important;
 }
+
 
 body{
     box-sizing: border-box;
     background-color: #D7D1CB;
     text-align: center;
-    margin: 10px;
-    padding: 10px;
     justify-content: center;
     font-size: 16px;
     outline: none;
@@ -25,6 +26,24 @@ header{
     margin: 10px;
 }
 
+/* home */
+#home{
+    width: 30px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 10%;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+}
+h3{
+margin-left: 35%;
+}
+
+/* */
+
 form{
     display: block;
     margin: 10px;
@@ -34,6 +53,7 @@ form{
     height: 100%;
 }
 .join_top{
+    margin-top: 10px;
     color: rgba(255,255,255,0.7);
     font-size: 16px;
     outline: none;
@@ -41,22 +61,27 @@ form{
 fieldset{
     background-color: #685D50;
     display: flex;
-    text-align: center;
     justify-content: center;
-    width: 350px;
-    height: 400px;
-    margin: 10 10 10 10;
+    width: 400px;
+    height: 550px;
+    margin-top: 70px;
     padding: 10 ;
+    position: absolute;
+    border-radius: 20px;
 
 }
 .input{
     display:inline-flex;
     flex-direction: column;
-    width: 100%;
+    width: 280px;
     border: 0px;
-    margin: 10 10 10 10;
-    padding: 10;
     
+}
+
+input{
+    margin-top: 10px;
+    height: 22px;
+    border-radius: 10px;
 }
 
 #input2{
@@ -75,18 +100,78 @@ a{
 button{
     margin: 3px;
     width: 100%;
-    height: 30px;
+    height: 35px;
     display:block;
     text-align: center;
     background-color: #524437;
+    border-radius: 50px;
 }
 
 #btn01{
     background-color: #524437;
-}
+    height: 25px;
+    width: 100px;
+    border-radius: 50px;
 
+}
+#uid{
+    width: 160px;
+}
 p{
     font-size: 8px;
 }
 
+
+
+
+/* 기둥 */
+
+.pc{
+    display: inline;
+}
+
+.flex_sb{
+    display:inline-flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#colimg{
+    vertical-align: top;
+    border: 0 none;
+    display:block;
+    width: auto;
+    height: 100%;
+
+
+}
+
+.blank{
+    opacity: 0;
+}
+
+/* input 박스 투명도 조절 */ 
+
+#uid, #upas, #upas1, #uname,#unum, #ubirth, #uemail{
+    /*border: 2px solid black ;*/
+    background:transparent;
+    color: rgba(255, 255, 255, 0.986);
+}
+
+/* input 글자 */
+
+input::placeholder{
+    color: rgba(255,255,255,0.7);
+    border: 5px;
+}
+/* footer */
+
+footer{
+
+    border: 1px solid #6B5D50;
+    width: 100%;
+    height: 50px;
+}
+
+/* footer */
 

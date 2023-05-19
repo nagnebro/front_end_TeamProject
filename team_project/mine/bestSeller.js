@@ -11,7 +11,7 @@ const btm4 = document.querySelector("#btm4");
 const btm_list = document.querySelectorAll(".bottombox");
 
 
-tab_a[0].style = "background-color:burlywood; color:white"
+tab_a[0].style = "background-color:#A89C89; color:white"
 btm_list[0].classList.remove("disappear")
 changeScreen(tab_a[0])
 // 초기화면이 실행됐을 때는 상세설명에 클릭돼있는 상태이며 화면역시 상세설명을 나타내야한다.
@@ -42,7 +42,7 @@ for (let i = 0; i < tab_a.length; i++) {
 
 
 
-            tmp.style = "background-color:burlywood; color:white"
+            tmp.style = "background-color:#A89C89; color:white"
             console.log(btm_list[i])
             btm_list[i].classList.remove("disappear")
             changeScreen(tmp)
@@ -51,7 +51,7 @@ for (let i = 0; i < tab_a.length; i++) {
         }
         else if (i == 1) {//상품설명클릭시
 
-            tmp.style = "background-color:burlywood; color:white"
+            tmp.style = "background-color:#A89C89; color:white"
             btm_list[i].classList.remove("disappear")
 
             changeScreen(tmp)
@@ -61,7 +61,7 @@ for (let i = 0; i < tab_a.length; i++) {
         }
         else if( i==2){
 
-            tmp.style = "background-color:burlywood; color:white"
+            tmp.style = "background-color:#A89C89; color:white"
             btm_list[i].classList.remove("disappear")
 
             changeScreen(tmp)
@@ -71,7 +71,7 @@ for (let i = 0; i < tab_a.length; i++) {
         }
         else if(i==3){
 
-            tmp.style = "background-color:burlywood; color:white"
+            tmp.style = "background-color:#A89C89; color:white"
             btm_list[i].classList.remove("disappear")
 
             changeScreen(tmp)

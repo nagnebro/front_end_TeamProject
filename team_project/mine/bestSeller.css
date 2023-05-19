@@ -1,3 +1,5 @@
+
+
 body,html {
 
     width: 100%;
@@ -5,6 +7,12 @@ body,html {
     margin  : 0;
     position : absolute;
 
+}
+
+
+* {
+
+    font-family: 'Noto Sans KR','Pretendard', sans-serif !important;
 }
 
 
@@ -17,7 +25,7 @@ header{
     width: 101%;
     justify-content : space-between;
     align-items : center;
-    height: 100px;
+    height: 130px;
     font-size : 14px;
 
 
@@ -29,16 +37,8 @@ header{
     margin-left: -9px;
     margin-top: -10px;
     position : fixed;
-    border-bottom : 1px solid wheat;
+    border-bottom : 1px solid #772511;
 
-
-    /*-webkit-backdrop-filter: brightness(1.1) blur(20px);*/
-    /*얘는 어떠한 역하릉ㄹ 하지 않는다.
-    */
-    /*mix-blend-mode: overlay;
-    이 속성은 헤더의 블럭의 backgroudn 뿐만 아니라 내부의 요소들(텍스트 같은 인라인 요소들) 모두 backdrop-filter에 맞게
-    변경하기 때문에 글자의 선명도가 떨어지게 된다.
-    */
 
 
     z-index: 999;
@@ -51,29 +51,64 @@ header{
 
 }
 
-#besttitle{
-    text-align : center;
-    font-size : 22px;
-}
+
+
 
 #home{
-    font-size : 35px;
+
+    height: 100px;
+    display : flex;
+    width: 150px;
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 13.5px;
+
 }
+
+#home:hover{
+    cursor:pointer;
+}
+#home div:nth-child(1){
+
+    width: 150px;
+    font-size : 40px;
+    font-family: 'Academy Engraved LET', sans-serif !important;
+
+    /*font-family :"Academy Engraved LET",'P크retendard', sans-serif !important;*/
+    height: 30px;
+    letter-spacing: 10px;
+
+
+}
+
+#home div:nth-child(2){
+    width: 150px;
+    height: 30px;
+    display : flex;
+    letter-spacing: 15px;
+    font-family: 'Academy Engraved LET', sans-serif !important;
+    justify-content: center;
+
+}
+
 
 header a{
     transition : 0.5s;
-    color : black;
     width: 90px;
     height: 100%;
     text-decoration: 0;
-    font-size : 13px;
+    font-size : 16px;
+    color : black;
+
+
 }
+
 a:hover{
+
+
     cursor : pointer;
 
-
-    /*transition : 0.5s;*/
-    /*color : #772510;*/
 
     /*
     css에서 처리 가능한 이벤트와 js에서 처리가능한 이벤트가 다른데 이때 비슷한 기능을 하는
@@ -85,17 +120,31 @@ a:hover{
 .leftbox, .rightbox{
 
     display : flex;
-    width: 33%;
-    margin-left: 30px;
+    width: 100%;
 }
 
 .rightbox{
     justify-content: right;
-    margin-right: 30px;
+    padding-right: 45px;
 }
+
+.leftbox{
+    padding-left: 45px;
+}
+
+
+
 
 /*여기까지 헤더*/
 
+
+
+
+
+#besttitle{
+    margin-top: 70px;
+    text-align : center;
+}
 
 
 
@@ -110,39 +159,43 @@ a:hover{
 .article{
     display : flex;
     width: 100%;
-    height : 350px;
+    height : 380px;
     background-color : #E2E2E2;
     /*justify-content: center;*/
     align-items: center;
-
-}
-.imgbox{
-    /*margin-right: 100px;*/
+    justify-content: center;
 
 }
 
 .article img{
-    position : relative;
-    left : 350px;
+    /*position : relative;*/
+    /*left : 350px;*/
+    /*filter: drop-shadow(10px 6px 6px #c3c3c3);*/
+
     width: 200px;
     transition : 1s;
     /* filter: drop-shadow(10px 6px 6px #c3c3c3);
 
     filter 스타일링을 추가하면 fixed를 씹어버리는 문제가 발생한다.
     */
-
+    /*padding :2em;*/
 }
 
+.imgbox{
+    width: 200px;
+    height: 300px;
+
+    padding-right: 3em;
+}
 .article img:hover{
-    width: 210px;
+
+    padding : 10px;
     transition : 1s;
 }
 
 
-
-
 .informbox{
-    position : absolute;
+    /*position : absolute;*/
     left : 600px;
     margin-left: 30px;
     height: 270px;
@@ -169,7 +222,7 @@ a:hover{
     border : 0;
     border-radius : 5px;
     font-size : 16px;
-    background-color: burlywood;
+    background-color: #A89C89;
     color:white;
     padding : 0;
     margin-right: 10px;
@@ -180,13 +233,13 @@ a:hover{
     border : 0;
     border-radius : 5px;
     font-size : 14px;
-    background-color: burlywood;
+    background-color: #A89C89;
     color:white;
 
 }
 #buy:hover,#bag:hover{
     cursor : pointer;
-    background-color: wheat;
+    background-color: #c4b589 ;
 }
 .buttonbox{
     margin-top: 100px;
@@ -202,13 +255,14 @@ position realative로 설정시 fixed를 씹고 위로 올라오게 된다. 상�
 .tab{
 
     display :flex;
-    width: 1000px;
+    width: 75vw;
     height: 50px;
     text-align: center;
     justify-content: center;
     margin : auto;
     margin-top: 50px;
     border-bottom : 1px solid black;
+
 }
 .tab a:nth-child(1){
 
@@ -239,7 +293,7 @@ position realative로 설정시 fixed를 씹고 위로 올라오게 된다. 상�
 }
 
 .bottombox{
-    width: 1000px;
+    width: 75vw;
     height: 650px;
     border-top : 1px solid black;
     margin :auto;
@@ -253,7 +307,7 @@ position realative로 설정시 fixed를 씹고 위로 올라오게 된다. 상�
 
 .bottom_inner{
     display : flex;
-    width: 80%;
+    width: 90%;
     height: 200px;
     margin : auto;
 
@@ -271,6 +325,7 @@ position realative로 설정시 fixed를 씹고 위로 올라오게 된다. 상�
 ._content{
     width: 66%;
     height: 170px;
+    line-height : 30px;
     font-size : 14px;
     border-bottom : 1px solid burlywood;
 }
@@ -289,8 +344,8 @@ ul{
 
 .bottombox .bottom_inner:nth-child(3) ._content{
 
-    line-height : 25px;
     height: 210px;
+    border-bottom: 0;
 }
 
 .disappear{
@@ -304,14 +359,10 @@ ul{
     height: 220px;
     margin : auto;
 
-    border-bottom : 1px solid burlywood;
+    border-bottom : 1px solid #A89C89;
     margin-bottom: 20px;
+    display : flex;
 
-}
-
-.bottom_tab4 ._content{
-    border : 0;
-    line-height : 25px;
 }
 
 .bottom_tab4:nth-child(2){
@@ -320,78 +371,189 @@ ul{
 
 }
 
-footer{
-    width: 100%;
-    height: 200px;
-    background-color: black;
+
+
+
+.hugitop{
+
+    border-bottom : 1px solid black;
+    display : flex;
+    justify-content : space-between;
+}
+
+
+
+.hugimid{
+    display : flex;
+
+    height: 40px;
+    padding-bottom: 10px;
+
+    align-items : center;
+}
+
+.hugimid div{
+    margin-left : 10px;
+    color : #999494;
     font-size : 13px;
-    display : flex;
+}
+.hugi{
+    margin-top: 20px;
+}
+.buyer span{
+    font-size : 15px;
     color : white;
-    margin-top: 150px;
-    align-items : center
-    /*justify-content: center;*/
 
 }
-
-#left, #center,#right{
-
-    width: 33%;
-    height: 70%;
-    display : flex;
-    /*텍스트를 정렬하기 위해 footer의 각 박스들을 flex box로 만들어서 텍스트 가로,세로 정렬을 실시*/
-    flex-direction: column;
-    justify-content: center;
+.buyer{
+    display :flex;
+    /*border : 1px solid black;*/
+    border-radius : 15px;
+    width: 80px;
+    height: 30px;
+    color : white;
     align-items: center;
+    justify-content: center;
+    background-color: #A89C89;
+    font-size : 22px;
+}
+
+.line{
+    width: 0;
+    height: 13px;
+    border-right : 1px solid #999494;
+}
+
+.hugitext{
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
 
 }
 
-#left, #center{
-    width: 45%;
-    border-right: 1px solid #E2E2E2;
+.hugibtm{
+    height: 50px;
+    text-align : right;
+    border-bottom : 1px solid black;
 }
 
-#right .txts:nth-child(1) span{
-    font-size : 18px
-}
-
-#right .txts:nth-child(n+1):nth-child(-n+3) span{
-
-    width: 200px;
-}
-
-footer span, footer .lspan{
+#select{
 
     width: 120px;
-    color : darkgray;
-    font-size : 12px
+    height: 35px;
+    border-radius : 20px;
+    padding-left: 10px;
+    padding-right : 10px;
+    /*background-color : #772510;*/
+    color : #772511;
+    outline : 0;
+    margin-left: 10px;
 }
-footer .lspan{
 
-    color: white;
+#select:hover{
+
+
+    transition : 0.5s;
+    background-color: #772511;
+    color : white;
+    cursor : pointer;
 }
-
-.txts{
-    margin-bottom: 10px;
+.hugitop_right{
     display : flex;
-    /**/
+    padding-bottom: 5px;
+    margin-right: 20px;
 
 }
 
-.booklist img:nth-child(n+1):nth-child(-n+5):hover{
 
-    width: 60px;
-    height: 80px;
+.hugitop_right button{
+    border-radius : 20px;
+    border : 1px solid black;
+    width: 120px;
+    background-color: white;
     transition : 0.5s;
 }
 
+.hugitop_right button:hover{
 
-#contentbox{
+    transition : 0.5s;
+    background-color: #772511;
+    color : white;
+    cursor : pointer;
+}
 
-    width: 500px;
-    height: 160px;
-    line-height : 22px;
-    margin-bottom: 20px;
+
+/*
+
+여기서부터 footer
+*/
+
+footer{
+    width: 100%;
+    height: 330px;
+    background-color: #f9f9f9;
+
+    border-top : 1px solid #e2e2e2;
+    font-size : 15px;
+
+    margin-top: 150px;
+
 
 }
 
 
+.footer_conatiner{
+    display : flex;
+    /*align-items : center;*/
+    justify-content: center;
+    height: 230px;
+}
+
+.footer_btm{
+    display : flex;
+    justify-content: center;
+    align-items : center;
+    height: 80px;
+
+}
+
+.footer_btm div{
+    /*padding-left: 60px;*/
+    border-right : 1px solid #d6d2cf;
+    padding-left : 15px;
+    padding-right : 15px;
+}
+
+.footer_btm div:last-child{
+    border-right : 0px;
+}
+
+.footerbox{
+    width:  16em;
+    padding-left: 30px;
+    border-right: 1px solid #E2E2E2;
+    height: 170px;
+    margin-top: 50px;
+
+}
+
+.footerbox:last-child{
+
+    border-right : 0px;
+}
+
+.footer_title{
+    font-size : 20px;
+    font-weight : bold;
+    margin-bottom: 10px;
+}
+
+.txts{
+    padding-bottom: 8px;
+
+}
+
+/*
+ footer끝
+*/

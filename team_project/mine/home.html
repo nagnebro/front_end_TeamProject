@@ -2,23 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>플라토</title>
     <link href="home.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="demo.css">
-
+    <link href="images/logo.png" rel="shortcut icon" type="image/x-icon">
     <!-- 나중에 따로 css파ㅣ일로 정리해-->
+    <link href="https://fonts.cdnfonts.com/css/academy-engraved-let" rel="stylesheet">
+
+
+<!--     header의 plato 글자의 스타일링을 위한 서체 링-->
+
+<!--    <link rel="preconnect" href="https://fonts.googleapis.com">-->
+<!--    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
+<!--    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@900&display=swap" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap">
+
 </head>
 <body>
 
 
 <header>
-    <div class="leftbox">
+    <div class="leftbox" >
         <a href="">추천도서</a><a href="">공지사항</a>
     </div>
-    <h2>
-        <a href="home.html"><span id="home">Flato</span></a>
-    </h2>
+
+
+    <div id="home"  onclick = "location.href='home.html'">
+
+
+            <div>Plato</div>
+
+            <div>store</div>
+        </div>
+
     <div class="rightbox">
         <a href="">로그인</a><a href="">회원가입</a><a href="">마이페이지</a><a href="">장바구니</a>
     </div>
@@ -30,12 +47,11 @@
 
 <!-- 빈박스를 집어넣는다-->
 
-
 <div class="promotion">
 
-    <p> 카테고리별 다양한 맞춤 추천 도서<br>
-       지금 확인해보세요!
-    <a href="">자세히 보기 ></a>
+    <p id="first_p"> 카테고리별 다양한 맞춤 추천 도서<br>
+        지금 확인해보세요!
+        <a href="">자세히 보기 ></a>
     </p>
     <div class="eventbox">
 
@@ -48,23 +64,21 @@
     </div>
     <div class="eventbtm">
 
-    <p>5월, 꼭 읽어야 할 필독도서</p>
+        <p>5월, 꼭 읽어야 할 필독도서</p>
 
 
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/book11.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/book12.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/book13.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/book14.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/book15.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/book16.jpg" alt=""></div>
 
-
-    <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="images/book11.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="images/book12.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="images/book13.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="images/book14.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="images/book15.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="images/book16.jpg" alt=""></div>
-
+            </div>
+            <div class="swiper-pagination"></div>
         </div>
-        <div class="swiper-pagination"></div>
-    </div>
     </div>
 
 </div>
@@ -75,9 +89,10 @@
 <div class="article">
 
     <div class="left">
-        <div>차별화된 서적관리</div>
+        <div>알고리즘 도서 추천 시스템</div>
         <div>
-            Flato 서점에서 다양한 최신 도서들을 즐겨보세요!
+            Plato 서점에서는 알고리즘 시스템을 이용해 회원님들의<br>
+            성향에 맞는 도서들을 추천해드립니다!
         </div>
     </div>
 
@@ -89,27 +104,26 @@
 </div>
 
 <div class="best">
-    <h2>Flato's Today Best Seller</h2>
+    <h2>Plato's Today Best Seller</h2>
 
     <hr>
     <div class="bestleft">
-        <div>
+        <div class="imgbox">
             <img src="images/book1.png" class="bigimg" onclick="bestSeller()">
         </div>
         <div class="bestcenter">
             <h3><span id="besttitle">오늘의 베스트셀러 :</span> <span id="booktitle">소크라테스의 변명</span></h3>
 
             <div id="contentbox">
-            <span id="content">서양 철학의 근간이 된 소크라테스 사상의 정수를 한 권으로 만나다.
-            그리스어 원전 완역본으로 읽는 인류 최고 지성인의 영원한 유산
-            참된 진리 앞에서 죽음도 기쁘게 받아들인 탁월한 지성인이자 정의의 철학자,
-            소크라테스의 사상을 한 권에 담았다. 소크라테스는 기원전 5세기경 상대주의적이고 실용적인
-            진리를 내세운 소피스트에 대항하여 절대적이고 변하지 않는 진리를 추구하며, 질문과 대화를 통해
-            사람들의 무지를 일깨웠다. 그뿐만 아니라, 불경죄로 사형 선고를 받아 죽음에 이를 때까지 자신의 사상과
-            철학을 흔들림 없이 지켜 나가며 서양 철학의 근간이 되었다. 죽을 때까지 단 한 권의 책도 저술하지
-            않았지만 그의ß 사상은 모두 수제자인 플라톤에 의해 보존되어 전해졌다.
+                서양 철학의 근간이 된 소크라테스 사상의 정수를 한 권으로 만나다.
+                그리스어 원전 완역본으로 읽는 인류 최고 지성인의 영원한 유산의
+                참된 진리 앞에서 죽음도 기쁘게 받아들인 탁월한 지성인이자 정의의 철학자,
+                소크라테스의 사상을 한 권에 담았다. 소크라테스는 기원전 5세기경 상대주의적이고 실용적인
+                진리를 내세운 소피스트에 대항하여 절대적이고 변하지 않는 진리를 추구하며, 질문과 대화를 통해
+                사람들의 무지를 일깨웠다. 그뿐만 아니라, 불경죄로 사형 선고를 받아 죽음에 이를 때까지 자신의 사상과
+                철학을 흔들림 없이 지켜 나가며 서양 철학의 근간이 되었다. 죽을 때까지 단 한 권의 책도 저술하지
+                않았지만 그의ß 사상은 모두 수제자인 플라톤에 의해 보존되어 전해졌다.
 
-            </span>
             </div>
             <div class="booklist">
                 <img src="images/book1.png" alt="">
@@ -127,63 +141,62 @@
 
 <footer>
 
-    <div id="left">
+    <div class="footer_conatiner">
+        <div class="footerbox">
 
-        <div class="txts">
-            <span class="lspan">Address</span>
-            <span>서울특별시 강남구 OO로</span>
+            <div class="footer_title">회원혜택</div>
+            <div class="txts">Pretisge Lounge</div>
+            <div class="txts">신규회원 혜택</div>
+            <div class="txts">등글별 혜택</div>
+            <div class="txts">출석체크</div>
+
         </div>
 
-        <div class="txts">
-            <span class="lspan">Tel</span>
-            <span>02-1234-5678</span>
+        <div class="footerbox">
+
+
+            <div class="footer_title">쇼핑 Tip</div>
+            <div class="txts">제휴포인트/상품권</div>
+            <div class="txts">Plato 기프트카트</div>
+            <div class="txts">대량구매</div>
+            <div class="txts">리딩트리서비스(독서경영)</div>
+
         </div>
 
-        <div class="txts">
-            <span class="lspan">Fax</span>
-            <span>02-123-4567</span>
+        <div class="footerbox">
+
+
+            <div class="footer_title">빠른 서비스</div>
+            <div class="txts">북클럽카드 등록</div>
+            <div class="txts">Plato캐시·조회</div>
+            <div class="txts">협력사 여러분</div>
+
+
         </div>
 
-        <div class="txts">
-            <span class="lspan">대표이사</span>
-            <span>홍길동</span>
-        </div>
-        <div class="txts">
-            <span class="lspan">사업자번호</span>
-            <span>123-45-67890</span>
+
+        <div class="footerbox">
+
+
+            <div class="footer_title">주문·결제</div>
+            <div class="txts">eBook</div>
+            <div class="txts">도서상품정보</div>
+            <div class="txts">고객센터</div>
+
+
         </div>
     </div>
-    <div id="center">
-
-        <div class="txts">
-            <span class="lspan">고객센터</span>
-            <span>1588-0000</span>
-
-        </div>
-
-        <div class="txts">
-            <span class="lspan">대량주문</span>
-            <span>khacademy@kh.com</span>
-        </div>
 
 
-    </div>
-    <div id="right">
-        <div class="txts">
+    <div class="footer_btm">
 
-            <span class="lspan">Tel. 02-1234-5678</span>
-
-        </div>
-
-        <div class="txts">
-            <span class="lspan">평일 : 09:00 ~ 18:00</span>
-
-        </div>
-
-        <div class="txts">
-            <span class="lspan">주말 : 10:00 ~ 15:00</span>
-
-        </div>
+        <div>회사소개</div>
+        <div>이용약관</div>
+        <div>개인정보처리방침</div>
+        <div>청소년보호정책</div>
+        <div>대량주문안내</div>
+        <div>채용정보</div>
+        <div>고객센터</div>
 
     </div>
 
@@ -193,7 +206,7 @@
 
 <div class="hid_content">
 
-    서양 철학의 근간이 된 소크라테스 사상의 정수를 한 권으로 만나다. 그리스어 원전 완역본으로 읽는 인류 최고 지성인의 영원한 유산
+    서양 철학의 근간이 된 소크라테스 사상의 정수를 한 권으로 만나다. 그리스어 원전 완역본으로 읽는 인류 최고 지성인의 영원한 유산의
     참된 진리 앞에서 죽음도 기쁘게 받아들인 탁월한 지성인이자 정의의 철학자,
     소크라테스의 사상을 한 권에 담았다. 소크라테스는 기원전 5세기경 상대주의적이고 실용적인
     진리를 내세운 소피스트에 대항하여 절대적이고 변하지 않는 진리를 추구하며, 질문과 대화를 통해
@@ -225,7 +238,8 @@
     자청이 찾아낸 ‘역행자의 7단계 모델’을 통해 함께 ‘인생의 추월차선’으로 향하자.
 </div>
 </body>
-<script src="jquery-3.7.0.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
 <script src="home.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <script src="demo.js">

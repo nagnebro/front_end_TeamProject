@@ -8,10 +8,13 @@ body,html {
     position : absolute;
 
 }
+body {
+    background: radial-gradient(ellipse at center, rgba(220,224,213,1) 0%, rgba(229,224,213,1) 50%, #e2e2e2 100%);
+}
 
 * {
 
-    font-family: 'Noto Sans KR','Pretendard', sans-serif !important;
+    font-family: 'Noto Sans KR', sans-serif !important;
 }
 
 
@@ -24,7 +27,7 @@ header{
     width: 101%;
     justify-content : space-between;
     align-items : center;
-    height: 100px;
+    height: 130px;
     font-size : 14px;
 
 
@@ -36,7 +39,7 @@ header{
     margin-left: -9px;
     margin-top: -10px;
     position : fixed;
-    border-bottom : 1px solid wheat;
+    border-bottom : 1px solid #772511;
 
 
 
@@ -51,18 +54,60 @@ header{
 }
 
 
+
+
 #home{
-    font-size : 35px;
+
+    height: 100px;
+    display : flex;
+    width: 150px;
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 13.5px;
+
 }
+
+#home:hover{
+    cursor:pointer;
+}
+#home div:nth-child(1){
+
+    width: 150px;
+    font-size : 40px;
+    font-family: 'Academy Engraved LET', sans-serif !important;
+
+    /*font-family :"Academy Engraved LET",'P크retendard', sans-serif !important;*/
+    height: 30px;
+    letter-spacing: 10px;
+
+
+
+}
+
+#home div:nth-child(2){
+
+    width: 150px;
+    height: 30px;
+    display : flex;
+    letter-spacing: 15px;
+    font-family: 'Academy Engraved LET', sans-serif !important;
+    justify-content: center;
+
+}
+
 
 header a{
     transition : 0.5s;
     width: 90px;
     height: 100%;
     text-decoration: 0;
-    font-size : 14px;
+    font-size : 16px;
     color : black;
+
+
 }
+
 a:hover{
 
 
@@ -79,13 +124,16 @@ a:hover{
 .leftbox, .rightbox{
 
     display : flex;
-    width: 33%;
-    margin-left: 30px;
+    width: 100%;
 }
 
 .rightbox{
     justify-content: right;
-    margin-right: 30px;
+    padding-right: 45px;
+}
+
+.leftbox{
+    padding-left: 45px;
 }
 
 /*여기까지 헤더*/
@@ -113,10 +161,15 @@ p{
     /*margin-bottom: 100px;*/
 }
 
+
+#first_p{
+
+    opacity : 0;
+}
 .promotion a{
-    padding-left: 20px;
+    padding-left: 10px;
     font-size : 15px;
-    color: darkgrey;
+    color: #772511;
     text-decoration: none;
     /*우진이가 만든 추천도서 페이지로 넘어가기*/
 }
@@ -133,6 +186,7 @@ p{
     border-radius : 20px;
     text-align : center;
     margin-bottom: 70px;
+    opacity : 0;
 
 }
 
@@ -182,7 +236,6 @@ p{
     transition : 1s;
     background-color : #A89D89;
     align-items : center;
-    /*justify-content: center;*/
     color : white;
 }
 .right{
@@ -200,23 +253,23 @@ p{
 
 .left{
 
-    width: 400px;
+    width: 500px;
     height: 400px;
     /*position : relative;*/
     /*line-height : 400px;*/
     right: 150px;
     top: 100px;
-    margin-left: 100px;
     padding-top : 150px;
     padding-right : 100px;
+    padding-left : 16em;
 
 
 }
 
 .left div:nth-child(1){
-    font-size : 50px;
+    font-size : 40px;
     font-weight : bold;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .left div:nth-child(2){
@@ -226,19 +279,28 @@ p{
 
 /* article 끝 */
 
+.left div{
+
+    opacity : 0.7;
+}
 
 
 
 /*footer위의 best셀러 블럭*/
 
+.imgbox{
+    display : flex;
+    align-items : center;
+    height: 100%;
+}
+
 
 .best{
-    /*height: 350px;*/
-    /*width: 900px;*/
-    width: 65vw;
-    height: 20vw;
+
+    width: 60%;
+    height: 450px;
     margin : auto;
-    margin-top: 40px;
+    margin-top: 100px;
 }
 
 
@@ -253,10 +315,7 @@ p{
 }
 
 
-.best div{
-    margin-left: 10px;
-    margin-right: 10px;
-}
+
 .best img{
     position : relative;
     width: 200px;
@@ -295,7 +354,7 @@ hr{
     width: 800px;
     height: 100%;
     position :relative;
-    left: 30px;
+    left: 7em;
 
 }
 
@@ -305,67 +364,16 @@ hr{
 
 }
 
+.booklist{
+
+    position : relative;
+
+}
+
 /*여기까지 article 끝*/
 
 
 
-/* 여기서부터 footer */
-footer{
-    width: 100%;
-    height: 200px;
-    background-color: white;
-    border-top : 0.5px solid #e2e2e2;
-    font-size : 15px;
-    display : flex;
-    margin-top: 150px;
-    align-items : center
-    /*justify-content: center;*/
-
-}
-
-#left, #center,#right{
-
-    width: 33%;
-    height: 70%;
-    display : flex;
-    /*텍스트를 정렬하기 위해 footer의 각 박스들을 flex box로 만들어서 텍스트 가로,세로 정렬을 실시*/
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-
-#left, #center{
-    width: 45%;
-    border-right: 1px solid #E2E2E2;
-}
-
-#right .txts:nth-child(1) span{
-    font-size : 18px
-}
-
-#right .txts:nth-child(n+1):nth-child(-n+3) span{
-
-    width: 200px;
-}
-
-footer span, footer .lspan{
-
-
-    color : black;
-    font-size : 14px
-}
-footer .lspan{
-
-    color: #772510 ;
-}
-
-.txts{
-    margin-bottom: 10px;
-    display : flex;
-/**/
-
-}
 
 .booklist img:nth-child(n+1):nth-child(-n+5):hover{
 
@@ -378,10 +386,15 @@ footer .lspan{
 #contentbox{
 
     width: 600px;
-    height: 160px;
-    line-height : 22px;
+    height: 200px;
+    line-height : 25px;
     margin-bottom: 20px;
+    font-size : 16px;
 
+}
+
+#content{
+    font-size : 16px;
 }
 
 
@@ -398,7 +411,7 @@ js에서 저 텍스트를 다 처리하는 것도 목적에 맞지 않고 뿐만
 }
 
 
- /*배경 이미지 중간에 삽일할 텍스트 처리. 아직 어떡할지 결정못함.*/
+/*배경 이미지 중간에 삽일할 텍스트 처리. 아직 어떡할지 결정못함.*/
 .article_title{
 
     font-size : 50px;
@@ -414,3 +427,73 @@ js에서 저 텍스트를 다 처리하는 것도 목적에 맞지 않고 뿐만
 }
 
 
+
+
+
+/* 여기서부터 footer */
+footer{
+    width: 100%;
+    height: 330px;
+    background-color: #f9f9f9;
+
+    border-top : 1px solid #e2e2e2;
+    font-size : 15px;
+
+    margin-top: 150px;
+
+
+}
+
+
+.footer_conatiner{
+    display : flex;
+    /*align-items : center;*/
+    justify-content: center;
+    height: 230px;
+}
+
+.footer_btm{
+    display : flex;
+    justify-content: center;
+    align-items : center;
+    height: 80px;
+
+}
+
+.footer_btm div{
+    /*padding-left: 60px;*/
+    border-right : 1px solid #d6d2cf;
+    padding-left : 15px;
+    padding-right : 15px;
+}
+
+.footer_btm div:last-child{
+    border-right : 0px;
+}
+
+.footerbox{
+    width:  16em;
+    padding-left: 30px;
+    border-right: 1px solid #E2E2E2;
+    height: 170px;
+    margin-top: 50px;
+
+}
+
+.footerbox:last-child{
+
+    border-right : 0px;
+}
+
+.footer_title{
+    font-size : 20px;
+    font-weight : bold;
+    margin-bottom: 10px;
+}
+
+.txts{
+    padding-bottom: 8px;
+
+}
+
+/*요기까지 footer*/
